@@ -1,0 +1,37 @@
+    <!-- products thumbnail list view -->
+    
+    {if !empty($title)}{$title}{/if}
+    
+    <!-- hook: frontend_product_list_before -->
+    
+    <ul class="thumbs li250px" id="product-list">
+    {foreach $products as $p}
+        <li itemscope itemtype ="http://schema.org/productgraph">
+            <div class="image">
+                <a href="{$p.frontend_url}" title="{$p.name|escape}{if $p.summary} &mdash; {strip_tags($p.summary)}{/if}">
+                    <div class="corner top right">
+                        {$wa->shop->getImageBadgeHtml($p)}
+                    </div>
+                    {$_img = $wa->shop->getProductImgHtml($p, '200x0', ['itemprop' => 'image'])}
+                    {if $_img}
+                        {$_img}
+                    {else}
+                        <img src="{$wa_theme_url}img/dummy200.png">
+                    {/if}
+                    <h5 itemprop="name">{$p.name}</h5>
+                </a>
+            </div>
+            {if $p.rating}{/if}
+            {if $p.summary}<p itemprop="description">{$p.summary}</p>{/if}
+            <span class="price nowrap">{shop_currency($p.price, $p.currency)}</span>
+        </li>
+    {/foreach}
+    </ul>
+
+    {if $pages_count > 1}
+    <div class="block lazyloading-paging">
+        {wa_pagination total=$pages_count attrs=['class' => "menu-h"]}
+    </div>
+    {/if}
+    
+    <!-- hook: frontend_product_list_after -->

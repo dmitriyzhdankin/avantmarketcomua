@@ -1,0 +1,10 @@
+404702b20e34799346042f116a5526be *img/payonline.png
+632a552c21649901538f9720cf838129 *img/payonline16.png
+a285da79a1cf95556e4eb1fd40059097 *lib/.htaccess
+aec0386a493845d7619d6281713c100c *lib/config/build.php
+7b118224873fbcf9a57b5a357b0b8337 *lib/config/plugin.php
+ac3b1aaf7cc8dff7e2b354e8db195faf *lib/config/settings.php
+ddf472f15f7a400ab46ad1f60ab69e08 *lib/payonlinePayment.class.php
+a285da79a1cf95556e4eb1fd40059097 *templates/.htaccess
+8c93d1523a81104f2d406ed156489bca *templates/callback.html
+56e5d42168a77e737a2527073c17dd6e *templates/payment.html

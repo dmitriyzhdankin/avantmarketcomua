@@ -1,0 +1,45 @@
+{wa_js file="js/compiled/blogPlugins.js"}
+	{$wa_url}wa-content/js/jquery-plugins/jquery.history.js
+	{$wa_app_static_url}js/blogPlugins.js
+{/wa_js}
+  <script type="text/javascript">
+  $.wa_blog.plugins = $.extend(true,$.wa_blog.plugins,{
+    'options':{
+      plugins:{json_encode($plugins)}
+    }
+  });
+  </script>
+<div class="shadowed">
+
+  <div class="sidebar left200px">
+    <div class="b-plugin-list">
+
+      <ul id="plugin-list" class="menu-v with-icons">
+      {foreach $plugins as $plugin} <!-- {$plugin.id}  -->
+        <li id="plugin-{$plugin.id}">
+          <a href="?module=plugins{if empty($plugin.blog_settings)}#/settings/generic/{$plugin.id}/{else}#/settings/custom/{$plugin.id}/{/if}">
+            <i class="icon16{if !isset($plugin.img)} plugins{else}" style="background-image: url('{wa_url()}{$plugin.img}');{/if}"></i>{$plugin.name|escape}
+            {if $plugin.description}
+              <span class="hint">{$plugin.description|escape}</span>
+            {/if}
+          </a>
+        </li>
+      {foreachelse}
+        <li>[`No plugins installed`]</li>
+      {/foreach}
+      </ul>
+
+      <div class="align-center hint hr">
+        [`Plugin order defines the order they are executed. Sort plugin list to change the order.`]
+      </div>
+    </div>
+
+  </div>
+
+  <div class="content left200px">
+
+    <div class="block double-padded b-plugin-content" id="blog-ajax-settings-container">
+      <div class="clear-left"></div>
+    </div>
+  </div>
+</div>

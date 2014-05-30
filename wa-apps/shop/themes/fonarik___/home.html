@@ -1,0 +1,64 @@
+
+    <div class="grid_12" style="float:left;height:300px;overflow:hidden;">
+        <div class="slidprev"><span>Назад</span></div>
+        <div class="slidnext"><span>Вперёд</span></div>
+        <div id="slider">
+        {$wa_banner}
+        </div>
+        <div id="myController">
+         {$wa_controller}
+        </div>
+    </div><!-- .grid_12 -->
+
+  <div class="clear"></div>
+
+      <div id="top_button">
+         {$wa_small_banner}
+        <div class="clear"></div>
+      </div><!-- #top_button -->
+
+      <div class="clear"></div>
+
+<!-- top products -->
+{$promos = $wa->shop->productSet('promo')}
+{$bestsellers = $wa->shop->productSet('novye_tovary')}
+
+{if $bestsellers && count($bestsellers)}
+<div class="container_12" style="display:block;height:450px;overflow:hidden;">  
+<div class="carousel">
+        <div class="c_header">
+          <div class="grid_10">
+            <h2>Новые товары:</h2>
+          </div><!-- .grid_10 -->
+
+          <div class="grid_2">
+            <a id="next_c2" class="next arows" href="#"><span>Вперёд</span></a>
+            <a id="prev_c2" class="prev arows" href="#"><span>Назад</span></a>
+           </div><!-- .grid_2 -->
+        </div><!-- .c_header -->
+
+        <div class="list_carousel">
+
+        <ul id="list_product2" class="list_product">
+        {foreach $bestsellers as $p}
+        
+        <li class="">
+              <div class="grid_3 product" itemscope itemtype ="http://schema.org/Product" >
+             {if $wa->user()->getName() and $p.sku.purchase_price gt 0}{*$p.price = $p.sku.purchase_price*}{/if}
+                {$bImage =  $wa->shop->getProductImgHtml($p, '300x0', ['itemprop' => 'image', 'default' => "`$wa_theme_url`img/dummy200.png"])|regex_replace:'/^.+src="([^"]+)".*$/':'\1'}
+                {$sCount = $bImage|count_characters}                    
+                {$bImage =  $bImage|substr:1:$sCount}
+			    <div class="prev">
+                <a href="{$p.frontend_url}" title="{$p.name}{if $p.summary} &mdash; {strip_tags($p.summary)}{/if}"
+                style="display:block;width:210px;height:210px;overflow:hidden;background-image:url({$bImage});background-size:contain;background-position:center;background-repeat:no-repeat;"
+                >
+                </a></div>
+                    
+                   
+              <h3 class="title">{$p.name}</h3>
+             {if $p.stock}<h3 class="title" style="height:20px;">{foreach $p.stock item=instock}{$instock.name}:
+               {if $instock.count lt 1} нет
+   {elseif $instock.count ge 1 and $instock.count lte $instock.critical_count} мало
+   {elseif $instock.count gt $instock.critical_count and $instock.count lte $instock.low_count} средне
+   {elseif $instock.count gt $instock.low_count} много{/if}; {/foreach}</h3>{/if}
+    

@@ -1,0 +1,54 @@
+{if !empty($error)}
+<div class="checkout-result error">{$error}</div>
+{else}
+<h3>[`Ship to`]</h3
+<p>{$contact.name}<br>
+{$shipping_address.value}</p>
+
+<h3>[`Bill to`]</h3>
+<p>{$contact.name}<br>
+{$billing_address.value}</p>
+
+<table class="table">
+    <tr>
+        <th></th>
+        {* <th>[`Price`]</th> *}
+        <th>[`Quantity`]</th>
+        <th>[`Tax`]</th>
+        <th>[`Total`]</th>
+    </tr>
+    {foreach $items as $item}
+    <tr>
+        <td>{$item.name}</td>
+        {* <td>{shop_currency($item.price)}</td> *}
+        <td class="align-center">x {$item.quantity}</td>
+        <td class="align-center">{if isset($item.tax_percent)}{$item.tax_percent}{/if}</td>
+        <td class="align-center">{shop_currency($item.price * $item.quantity, $item.currency)}</td>
+    </tr>
+    {/foreach}
+    <tr class="no-border thin">
+        <td colspan="3" class="align-right">[`Subtotal`]</td>
+        <td class="align-center">{shop_currency($subtotal)}</td>
+    </tr>
+    <tr class="no-border thin">
+        <td colspan="3" class="align-right">[`Discount`]</td>
+        <td class="align-center">{shop_currency($discount)}</td>
+    </tr>
+    <tr class="no-border thin">
+        <td colspan="3" class="align-right">[`Shipping`]</td>
+        <td class="align-center">{shop_currency($shipping)}</td>
+    </tr>
+    <tr class="no-border thin">
+        <td colspan="3" class="align-right">[`Tax`]</td>
+        <td class="align-center">{shop_currency($tax)}</td>
+    </tr>
+    <tr class="no-border thin large">
+        <td colspan="3" class="align-right"><b>[`Total`]</b></td>
+        <td class="align-center bold">{shop_currency($total)}</td>
+    </tr>
+</table>
+
+[`Comment`]<br>
+<textarea class="comment" name="comment">
+</textarea>
+{/if}

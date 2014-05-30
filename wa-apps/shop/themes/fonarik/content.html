@@ -1,0 +1,334 @@
+    <!-- plugin hook: 'frontend_header' -->
+    {* @event frontend_header.%plugin_id% *}
+    {foreach $frontend_header as $_}{$_}{/foreach}  
+                   
+  <div class="container_12" style="margin-top:-20px;">
+    <div id="top">
+      <div class="grid_3" style="width:610px;overflow:hidden;margin:0px;padding:0px;">
+       <div style="float:left;width:100%;padding-top:10px;">
+      {$pages =  $wa->shop->pages()}
+      {foreach $pages as $page}
+       <a href="{$page.url}" style="display:block;float:left;margin-right:10px;">{$page.name}</a>
+      {/foreach} 
+      </div>
+      </div>
+       
+      <div class="grid_3" style="width:150px;padding-top:10px;float:left;">      
+      <div style="float:left;width:100%;text-align:right;padding-top:5px;">
+      {if $wa->user()->getName()} 
+      <a href="/my"><strong>Профиль</strong></a> | 
+      <a href="/?logout">Выйти</a>
+      {else}
+      Войти в систему: 
+      <a href="/login/">Вход</a>
+      {/if}
+      </div>
+      </div>
+      
+
+      <div class="grid_3" style="width:195px;float:right;padding-top:10px;text-align:right;">
+      {if count($currencies) > 1}
+               Валюта: <select id="currency" class="select" style="padding:0px 0px 0px 5px;width:127px;text-align:left;">
+                    {$currency = $wa->shop->currency()}
+                    {foreach $currencies as $c_code => $c}
+                    <option value="{$c_code}" {if $c_code == $currency} selected{/if}>{$c.code}</option>
+                    {/foreach}
+                </select>
+                <script>
+                    $("#currency").change(function () {
+                        var url = location.href;
+                        if (url.indexOf('?') == -1) {
+                            url += '?';
+                        } else {
+                            url += '&';
+                        }
+                        location.href = url + 'currency=' + $(this).val();
+                    });
+                </script>
+             {/if}
+       </div>
+     
+      
+    </div>
+
+    <div class="clear"></div>
+
+    <header id="branding">
+      <div class="grid_3" style="width:auto;margin-top:8px;" >
+        <hgroup>
+          <h1 id="site_logo" ><a href="{$wa_url}" title="{$wa->accountName()}">
+          <img src="{$wa_active_theme_url}images/logo.jpg" alt="{$wa->accountName()}"/></a></h1>
+        </hgroup>
+      </div><!-- .grid_3 -->
+
+<div class="grid_3" style="float:left;">
+
+<div class="phone_top"  style="margin:0px;width:95px;float:left;line-height:18px;">
+<span id="phoneMain"><span style="font-size:11px;">(095) 740 46 91</span></span>
+</div><!-- .phone_top -->
+<div class="phone_top" style="margin:0px;width:85px;float:left;line-height:18px;">         
+<span id="phoneMainUa" class="change_phoneMain" style="display:inline-block;"><span style="font-size:11px;">(044) 232 81 07</span></span>
+</div><!-- .phone_top -->
+
+<form method="get" id="searchform" class="search" action="{$wa->getUrl('/frontend/search')}" style="float:left;width:100%;margin:3px 0px;">
+<input class="text entry_form" type="search" name="query" {if !empty($query)}value="{$query}"{/if} id="search" placeholder="[`Find products`]" />
+<input type="submit" class="submit" name="Submit" value="Search Site" style="visibility:hidden;" />
+</form>  
+
+
+<div class="phone_top"  style="margin:0px;width:95px;float:left;line-height:21px;">
+<span id="phoneMain"><span style="font-size:11px;">(044) 393 40 14</span></span>
+</div><!-- .phone_top -->
+<div class="phone_top" style="margin:0px;width:85px;float:left;line-height:21px;">         
+<span id="phoneMainUa" class="change_phoneMain" style="display:inline-block;"><span style="font-size:11px;">(067) 575 35 40</span></span>
+</div><!-- .phone_top -->
+</div>
+
+<div class="grid_6" style="width:235px;float:left;">
+ 
+<script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+ 
+<div style="float:left;width:100%;margin-top:15px;">
+<a href="skype:alekseev_andrey86?chat" style="float:left;width:20px;height:16px;">
+<img src="http://www.skypeclub.ru/i/small_transparent_online.png" style="border: none;" /> 
+</a>
+
+<a href="skype:alekseev_andrey86?chat" style="float:left;width:auto;height:16px;">
+alekseev_andrey86
+</a>
+
+<a target="_blank" href="http://icq.com/people/about_me.php?uin=632653557" style="float:left;width:20px;height:16px;margin-left:10px;">
+<img border="0" alt="*" src="http://icq-rus.com/icq/7/632653557.gif" />
+</a>
+
+<a target="_blank" href="http://icq.com/people/about_me.php?uin=632653557" style="float:left;width:auto;height:16px;">
+632653557
+</a>
+
+</div>
+
+<div style="float:left;width:100%;margin-top:10px;">
+<a href="skype:magnezimus?chat" style="float:left;width:20px;height:16px;">
+<img src="http://www.skypeclub.ru/i/small_transparent_online.png" style="border: none;" /> 
+</a>
+
+<a href="skype:magnezimus?chat" style="float:left;width:auto;height:16px;">
+magnezimus
+</a>
+
+<a target="_blank" href="http://icq.com/people/about_me.php?uin=687036358" style="float:left;width:20px;height:16px;margin-left:10px;">
+<img border="0" alt="*" src="http://icq-rus.com/icq/7/687036358.gif" />
+</a>
+
+<a target="_blank" href="http://icq.com/people/about_me.php?uin=687036358" style="float:left;width:auto;height:16px;">
+687036358
+</a>
+
+</div>
+
+  <!--<nav class="private">
+ 
+ 
+          <ul>
+            <li>
+					<a href="http://icq.com/people/about_me.php?uin=632653557" target="_blank">
+					    Консультация в ICQ</a>
+					</li>
+		<li class="separator">|</li>
+            <li><a href="skype:alekseev_andrey86?chat">Написать в Skype</a></li>
+          </ul>
+          <span style="padding:5px 0px;width:97%;margin-left:3%;margin-top:3px;height:15px;float:left;">А также: 
+          <a href="skype:magnezimus?chat">Ещё Skype</a>,&nbsp;<a href="http://icq.com/people/about_me.php?uin=687036358" target="_blank">и ICQ</a>
+          </span>
+        </nav><!-- .private -->
+        
+        
+         
+  </div><!-- .grid_6 -->
+      
+
+<div class="grid_6" style="width:auto;float:right;">
+        <ul id="cart_nav">
+          <li>
+          <div id="cart">{$cart_total = $wa->shop->cart->total()}
+            <a class="cart_li" href="{$wa->getUrl('/frontend/cart')}">Ваш заказ:
+            <span  class="cart-total">{shop_currency($cart_total, true)}</span></a>
+            </div>
+          
+          </li>
+          <li style="padding:5px 0px;width:200px;margin-left:-50px;height:15px;float:left;"> 
+          1USD = {math equation="x / y" x=$currencies.USD.rate y=$currencies.UAH.rate format="%.2f"} UAH</li>
+        </ul>
+       
+     </div>
+      
+
+      
+    </header><!-- #branding -->
+  </div><!-- .container_12 -->
+
+  <div class="clear"></div>
+
+  <div id="block_nav_primary">
+    <div class="container_12">
+      <div class="grid_12">
+        <nav class="primary">
+          <ul>{$wa_menu}</ul>
+        </nav><!-- .primary -->
+      </div><!-- .grid_12 -->
+    </div><!-- .container_12 -->
+    
+     <div class="container_12" >
+      <div class="grid_12" style="margin-top:10px;">
+        <nav class="primary">
+          <ul>{$wa_menu2}</ul>
+        </nav><!-- .primary -->
+      </div><!-- .grid_12 -->
+    </div><!-- .container_12 -->
+       
+  </div><!-- .block_nav_primary -->
+
+  <div class="clear"></div>
+  <!-- navigation breadcrumbs -->
+ {if isset($breadcrumbs)}
+  <div class="container_12">
+    <div class="grid_12">
+       <div class="breadcrumbs">
+                    <a href="{$wa_app_url}">{$wa->accountName()}</a><span>&#8250;</span>
+                    {if $breadcrumbs}
+                        {foreach $breadcrumbs as $breadcrumb}
+                            <a href="{$breadcrumb.url}">{$breadcrumb.name}</a><span>&#8250;</span>
+                        {/foreach}
+                    {else} <span>&#8250;</span> {/if}
+                </div></div></div>
+            {/if}
+<section id="main">  
+  <div class="container_12">
+            {$content}
+  </div>
+  </section><!-- #main -->
+  
+  <div class="clear"></div>
+
+<footer>
+    <div class="f_navigation">
+      <div class="container_12">
+        <div class="grid_3">
+          <div style="font-size:18px;margin-bottom:10px">Контакты</div>
+          <div style="font-size:16px;"> г. Киев, ул. Механизаторов, 2</div>   
+
+          
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <div style="font-size:18px;margin-bottom:10px">Телефоны:</div>
+
+ <div class="phone_top" style="margin:0px;width:100%;float:left;line-height:18px;">         
+<span id="phoneMainUa" class="change_phoneMain"><span style="font-size:16px;">(044) 232 81 07</span></span>
+</div><!-- .phone_top -->
+<div class="phone_top"  style="margin:0px;width:100%;float:left;line-height:21px;">
+<span id="phoneMain"><span style="font-size:16px;">(044) 393 40 14</span></span>
+</div><!-- .phone_top -->
+        </div><!-- .grid_3 -->
+
+
+        <div class="grid_3">
+<div style="font-size:18px;margin-bottom:10px">Телефоны:</div>
+<div class="phone_top"  style="margin:0px;width:100%;float:left;line-height:18px;">
+<span id="phoneMain"><span style="font-size:16px;">(095) 740 46 91</span></span>
+</div><!-- .phone_top -->        
+
+<div class="phone_top" style="margin:0px;width:100%;float:left;line-height:21px;">         
+<span id="phoneMainUa" class="change_phoneMain"><span style="font-size:16px;">(067) 575 35 40</span></span>
+</div><!-- .phone_top -->
+        </div><!-- .grid_3 -->
+
+
+        <div class="grid_3">
+          <div style="font-size:18px;margin-bottom:10px">Связаться:</div>
+          
+          <div style="font-size:16px;"><a href="http://icq.com/people/about_me.php?uin=632653557" target="_blank">Консультация в ICQ</a></div>
+          <div style="font-size:16px;"><a href="http://icq.com/people/about_me.php?uin=687036358" target="_blank">Консультация в ICQ 2</a></div>
+		  <div style="font-size:16px;"><a href="skype:alekseev_andrey86?chat">Написать в Skype</a></div>
+          <div style="font-size:16px;"><a href="skype:magnezimus?chat">Написать в Skype 2</a></div>
+          
+          
+        </div><!-- .grid_3 -->
+
+        <div class="clear"></div>
+      </div><!-- .container_12 -->
+      <div class="container_12"></div>
+    </div><!-- .f_navigation -->
+
+    <div class="f_info">
+      <div class="container_12">
+        <!--<div class="grid_3">
+          <p class="copyright"></p>
+        </div>
+
+        <div class="grid_9">
+          <div class="soc">
+            <!--<a class="google" href="#"></a>
+            <a class="twitter" href="#"></a>
+            <a class="facebook" href="#"></a>
+          </div> -->
+       
+
+<div class="counters" style="float:left;width:100%;margin:10px 0px;">
+<div class="blocks" style="float:left;width:100%;">
+
+ <div id="poweredby">
+                <a title="[s`Powered by Webasyst`]" href="http://www.webasyst.com/" class="dots"></a>
+            </div>
+            <div id="copyright" style="float:left;width:100%;">
+                 <span style="float:left;">&copy; {time()|wa_datetime:"Y"} <a href="{$wa_url}">{$wa->accountName()}</a></span>
+                <span style="float:right;">&copy; разработка: <a href="http://code201.net">Code201.net</a></span>
+
+               
+            </div>        
+
+</div>
+					
+
+<div class="blocks" style="float:left;width:auto;margin-left:10px"> 
+							
+                    </div>
+					
+				</div>
+                
+                 </div>
+				
+		<!--</div>-->
+ 
+</div>
+
+<!--<script type="text/javascript"><!--
+reformal_wdg_w    = "713";
+reformal_wdg_h    = "460";
+reformal_wdg_domain    = "fonarik";
+reformal_wdg_mode    = 0;
+reformal_wdg_title   = "Fonarik.com";
+reformal_wdg_ltitle  = "Оставить отзыв";
+reformal_wdg_lfont   = "Verdana, Geneva, sans-serif";
+reformal_wdg_lsize   = "12px";
+reformal_wdg_color   = "#355bbd";
+reformal_wdg_bcolor  = "#516683";
+reformal_wdg_tcolor  = "#FFFFFF";
+reformal_wdg_align   = "right";
+reformal_wdg_charset = "utf-8";
+reformal_wdg_waction = 0;
+reformal_wdg_vcolor  = "#9FCE54";
+reformal_wdg_cmline  = "#E0E0E0";
+reformal_wdg_glcolor  = "#105895";
+reformal_wdg_tbcolor  = "#FFFFFF";
+reformal_wdg_tcolor_aw4  = "#3F4543";
+ 
+reformal_wdg_bimage = "http://fonarik.com/wp-content/themes/fonarik/images/leave_feedback.png";
+
+</script>
+
+<script type="text/javascript" language="JavaScript" src="http://widget.reformal.ru/tabn2v4.js"></script><noscript><a href="">Fonarik.com feedback</a> <a href="">поддержка <img src="http://widget.reformal.ru/i/reformal_ru.png" /></a></noscript> -->
+
+  </footer>
+  {* @event frontend_footer.%plugin_id% *}
+  {foreach $frontend_footer as $_}{$_}{/foreach}

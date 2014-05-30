@@ -1,0 +1,119 @@
+{extends file='../backend/Backend.html'}
+{block name="content"}
+{if $error}
+<div class="ui-error"><i class="icon16 error"></i>{$error}</div>
+{/if}
+        <div class="sidebar left200px">
+            <div class="i-plugin-list">
+                <h5 class="heading">[`By app`]</h5>
+                <ul class="menu-v with-icons stack">
+                    {foreach $apps as $app_id => $app}
+                        {if !empty($app.current) && $app.enabled}
+                            {assign var=app_id value=$app.slug}
+                            <li {if isset($slug)&&$slug==$app.slug && (!isset($vendor) || $vendor==$app.vendor)}class="selected"{/if}>
+                                <a href="?module=plugins&amp;slug={$app.slug}&amp;vendor={$app.vendor}">
+                                    <img style="height:16px;width:16px;top: 4px; left: 6px; position:absolute;"  src="{if $app.current}{if !empty($app.current.icon.16)}{"`$wa_url`wa-apps/`$app_id`/`$app.current.icon.16`"}{else}{"`$wa_url`wa-apps/`$app_id`/`$app.current.img`"}{/if}{elseif $app.img_cached}{"`$wa_url`wa-data/public/installer/images/`$app.img_cached`"}{else}{$app.img}{/if}" alt="">
+                                    {$app.name|default:{$app.slug}|escape}
+                                    {if isset($app.extras.plugins) && isset($app.extras.plugins) && $app.extras.plugins}
+                                        <span class="count">{$app.extras.plugins|count}</span>
+                                    {/if}
+                                </a>
+                            </li>
+                        {/if}
+                    {foreachelse}
+                        <li>
+                            <br /><br />
+                            <p class="hint align-center">[`No plugin enabled apps are installed.`]</p>
+                        </li>
+                    {/foreach}
+                </ul>
+
+                <br>
+
+                <h5 class="heading">[`By type`]</h5>
+                <ul class="menu-v with-icons stack">
+                {foreach $systemplugins as $type => $info}
+                    <li{if !empty($selected_type) && ($type == $selected_type)} class="selected"{/if}>
+                        <a href="?module=plugins&amp;subject=systemplugins&amp;slug={$type}">
+                            <i class="{$info.icon|default:'icon16 plugins'}"></i>{$info.name|escape}
+                                <span class="count">{count($info.plugins)|string_format:'%d'}</span>
+                        </a>
+                    </li>
+                    {/foreach}
+                </ul>
+            </div>
+        </div>
+        <div class="content left200px">
+        <div class="i-plugin-settings">
+        {if !empty($selected_app)}
+            {$selected = $selected_app.extras}
+        {elseif !empty($selected_type) && !empty($systemplugins[$selected_type])}
+            {$selected = $systemplugins[$selected_type]}
+        {/if}
+        {if !empty($selected)}
+            <table class="i-plugins">
+                <tbody>
+                    {foreach $selected.plugins as $plugin_id => $plugin}
+                        <tr>
+                            <td class="i-plugin-name">
+                                <h5 title="{$plugin_id|escape}">
+                                {if !empty($plugin.app_slug)}
+                                {if !empty($plugin.img) || $plugin.current && !empty($plugin.current.img)}
+                                {if isset($plguin.downloadable)}
+                                    <img src="{if $plugin.current}{"`$wa_url`wa-apps/`$plugin.slug`/`$plugin.current.img`"}{elseif $plugin.img_cached}{"`$wa_url`wa-data/public/installer/images/`$plugin.img_cached`"}{else}{$plugin.img}{/if}" alt="">
+                                    {else}
+                                    <img src="{if $plugin.current}{"`$wa_url`wa-apps/`$plugin.slug`/`$plugin.current.img`"}{elseif $plugin.img_cached}{"`$wa_url`wa-data/public/installer/images/`$plugin.img_cached`"}{else}{$plugin.img}{/if}" alt="">
+                                {/if}
+                                {else}
+                                    <i class="icon16 overhanging plugins"></i>
+                                {/if}
+                                {/if}
+                                    {$plugin.name|default:$plugin_id|escape}
+                                    {if isset($plugin.status_label) && $plugin.status_label}
+                                    <span class="highlighted i-plugin-label">{$plugin.status_label}</span>
+                                {/if}
+                                </h5>
+                                <span class="hint">{$plugin.author|escape}</span>
+                                <p class="small">{$plugin.description}</p>
+                            </td>
+                            <td>
+                            {if !empty($plugin.current) && $plugin.enabled}
+                                <em class="i-plugin-installed">[`Installed`]</em>
+                                <br>
+                                <span class="hint">{$plugin.current.version|default:'unknown'}</span>
+                            {elseif $plugin.applicable}
+                                <a href="?module=update&amp;action=manager&amp;install=1&amp;app_id[{$plugin.slug}]={$plugin.vendor}" class="button green">[`Install`]</a>
+
+                            {else}
+                                <a href="#" class="button grey">[`Install`]</a>
+                            {/if}
+                            {if !$plugin.current}
+                                {include file="templates/includes/requirements.html" item=$plugin inline}
+                            {/if}
+                            </td>
+                            <td class="min-width nowrap">
+                            {if !$plugin.system && isset($plugin.current) && $plugin.current}
+                                <a class="i-app-delete" href="?module=plugins&amp;action=remove&amp;extras_id[{$plugin.slug}]={$plugin.current.vendor|default:''}" onClick="return confirm(this.title);" title="[`This will delete application plugin source code and data without the ability to recover. Are you sure?`]">
+                                    <i class="icon16 delete"></i>
+                                    [`Delete`]
+                                </a>
+                            {/if}
+                            </td>
+                        </tr>
+                    {foreachelse}
+                        <tr>
+                            <td>[`There are no available plugins for the application`]</td>
+                        </tr>
+                    {/foreach}
+                </tbody>
+            </table>
+        {/if}
+
+
+        <div class="block double-padded align-center hint">
+            [`Plugins are downloaded from webasyst.com website and installed in a single click.`]
+        </div>
+        <div class="clear"></div>
+        </div>
+    </div>
+{/block}

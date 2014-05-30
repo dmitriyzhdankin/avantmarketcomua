@@ -1,0 +1,106 @@
+
+    <!-- plugin hook: 'frontend_nav' -->
+    {* @event frontend_nav.%plugin_id% *}
+    {foreach $frontend_nav as $_}{$_}{/foreach}
+    
+    <!-- info pages -->
+    {$shop_pages=$wa->shop->pages()}
+    {if $shop_pages && $wa->param('page_id')}
+    <aside >         
+	<nav class="left_menu">
+        {wa_print_tree tree=$shop_pages attrs = 'id="page-list"' elem ='
+        <a href=":url" title=":title">:name</a>' selected=$wa->param('page_id')}
+     </nav></aside>
+    {/if}
+
+    <!-- category tree -->
+ {if $categories = $wa->shop->categories()} 
+  {if !isset($category) && !$category.id}
+  <aside id="categories_nav">
+		<h3>Категории</h3>            
+		<nav class="left_menu"><ul>
+        {foreach $categories as $c}
+        {if $c.parent_id == 0}
+        <li><a href="{$c.url}">{$c.name|escape}</a></li>
+        {/if}
+        {/foreach}
+     </ul></nav><!-- .left_menu -->
+  </aside>
+  {else}
+  {foreach $categories as $c}
+   {if $category.id == $c.parent_id OR ($category.parent_id == $c.parent_id && $c.parent_id != 0)}
+   {$childs= 1}
+   {/if}
+  {/foreach}
+  {if $childs}
+  <aside id="categories_nav">
+	<h3>Категории</h3>            
+	<nav class="left_menu"><ul>
+        {foreach $categories as $c}
+        {if $category.id == $c.parent_id OR ($category.parent_id == $c.parent_id && $c.parent_id != 0)}
+        <li {if $category.id == $c.id}class="current"{/if}><a href="{$c.url}">{$c.name|escape}</a></li>
+        {/if} 
+        {/foreach}
+     </ul></nav><!-- .left_menu -->
+  </aside>
+  {/if}
+  {/if}
+ {/if}
+    
+    {if $wa->get($filter.code, array())}
+     <aside>
+		     <h3>Выбранные фильтры:</h3>		     
+		     <div class="currently_shopping">
+			    <ul>
+                {foreach $filters as $fid => $filter}
+                {if $fid == 'price'}
+                {$c = $wa->shop->currency(true)}
+                 <li>Цена от: <span>{if $wa->get('price_min')}{(int)$wa->get('price_min')}{/if}</span> до: <span>{if $wa->get('price_max')}{(int)$wa->get('price_max')}{/if}</span> {$c.sign}</li>
+                {/if}
+                 {foreach $filter.values as $v_id => $v}
+                 {if in_array($v_id, $wa->get($filter.code, array()))}
+                 <li>{$filter.name}: <span>{$v}</span></li>
+                 {/if}
+                {/foreach}
+                {/foreach}
+			    </ul>	 
+			    <div class="clear"></div>
+		     </div><!-- .currently_shopping -->		 
+	 </aside><!-- #shop_by -->  
+    {/if}
+    
+    {if !empty($filters)}
+     <aside>
+		 <h3>Фильтры</h3>
+        <form method="get" action="" class="check_opt">
+        {foreach $filters as $fid => $filter}
+            {if $fid == 'price'}
+                {$c = $wa->shop->currency(true)}
+                <h4>[`Price`]</h4>
+                [`from`] <input type="text" name="price_min" style="width:50px;" {if $wa->get('price_min')}value="{(int)$wa->get('price_min')}"{/if} placeholder="0">
+                [`to`] <input type="text" name="price_max" style="width:50px;" {if $wa->get('price_max')}value="{(int)$wa->get('price_max')}"{/if} placeholder="0"> {$c.sign}
+            {else}
+                <h4>{$filter.name}</h4>
+                {foreach $filter.values as $v_id => $v}
+
+                 <p><input class="niceCheck" type="checkbox" name="{$filter.code}[]" {if in_array($v_id, $wa->get($filter.code, array()))}checked{/if} value="{$v_id}"/> {$v}</p>
+
+                {/foreach}
+            {/if}
+
+        {/foreach}
+        
+            <input type="submit" value="[`Filter products`]" style="float:left;width:100%;margin:20px 0px;">
+        </form>
+    </aside>
+    {/if}
+    
+    <!-- tag cloud -->
+    {if $cloud = $wa->shop->tags()}
+   <aside id="tags">
+		     <h3>Теги</h3>      
+            {foreach $cloud as $tag}
+                <a href="{$wa_app_url}tag/{$tag.uri_name}/" style="font-size: {$tag.size}%;">{$tag.name|escape}</a>
+            {/foreach}
+    </aside>
+    {/if}

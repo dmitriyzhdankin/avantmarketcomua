@@ -1,0 +1,66 @@
+<div id="content">
+
+<div class="grid_9" id="checkout_info" style="margin-top:0px;">
+    {if isset($checkout_steps)}
+    <!-- checkout step content -->
+    
+    {foreach $checkout_steps as $step_id => $s}
+        {if $checkout_current_step == $step_id}
+        <ul class="checkout_list">
+		<li class="active">
+		<div class="list_header">{$s.name} <div class="number"></div></div>
+		<div class="list_body">
+        <form method="post" action="">
+            {if in_array($step_id,['contactinfo', 'shipping', 'payment', 'confirmation'])}
+                {include file="checkout.`$step_id`.html"}
+            {else}
+                {$s.content}
+            {/if}
+            <div class="clear-both"></div>
+            {if $s@last}
+                {if empty($error)}
+                <div class="float-right">
+                    <input type="submit" class="large" value="[`Place order`]">
+                </div>
+                {/if}
+            {else}
+                <input type="submit" value="[`Next &rarr;`]">
+            {/if}
+        </form>
+        </div>
+        </li>
+        </ul>
+        </div>
+        
+        {/if}
+    {/foreach}
+    {else}
+    
+        <div class="checkout-step">
+            {include file="checkout.`$checkout_current_step`.html"}
+        </div>
+        
+    {/if}
+</div>
+<div class="grid_3" id="sidebar_right" style="margin-top:0px;">
+			<aside id="checkout_progress" style="margin-top:0px;">
+			<h3>Оформление заказа:</h3>
+        {if isset($checkout_steps) && count($checkout_steps) > 1}
+        <ul class="checkout-navigation menu-h">
+            <li>
+                [`Cart`] <a href="{$wa->getUrl('/frontend/cart')}">Вернуться</a>
+            </li>
+            {foreach $checkout_steps as $step_id => $s}
+                <li class="{if isset($_upcoming_flag)} upcoming{/if}{if $step_id == $checkout_current_step} selected{$_upcoming_flag = 1}{/if}">
+                    {$s.name} <a href="{if $s@first}{$wa->getUrl('/frontend/checkout')}{else}{$wa->getUrl('/frontend/checkout', ['step' => $step_id])}{/if}">Перейти</a>
+                </li>
+               
+            {/foreach}
+        </ul>
+       {else}
+       <p>Благодарим за заказ</p>
+    {/if}
+                 </div><!-- #sidebar_right -->
+       </div><!-- #content -->
+       
+      <div class="clear"></div>

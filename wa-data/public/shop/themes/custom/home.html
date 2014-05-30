@@ -1,0 +1,167 @@
+
+    <div class="grid_12" style="float:left;height:300px;overflow:hidden;">
+        <div class="slidprev"><span>Назад</span></div>
+        <div class="slidnext"><span>Вперёд</span></div>
+        <div id="slider">
+        {$wa_banner}
+        </div>
+        <div id="myController">
+         {$wa_controller}
+        </div>
+    </div><!-- .grid_12 -->
+
+  <div class="clear"></div>
+
+      <div id="top_button">
+         {$wa_small_banner}
+        <div class="clear"></div>
+      </div><!-- #top_button -->
+
+      <div class="clear"></div>
+
+<!-- top products -->
+{$promos = $wa->shop->productSet('promo')}
+{$bestsellers = $wa->shop->productSet('bestsellers')}
+{if $promos && count($promos)}
+<div class="container_12" style="display:block;height:435px;overflow:hidden;">  
+<div class="carousel">
+        <div class="c_header">
+          <div class="grid_10">
+            <h2>Популярные продукты:</h2>
+          </div><!-- .grid_10 -->
+
+          <div class="grid_2">
+            <a id="next_c1" class="next arows" href="#"><span>Вперёд</span></a>
+            <a id="prev_c1" class="prev arows" href="#"><span>Назад</span></a>
+           </div><!-- .grid_2 -->
+        </div><!-- .c_header -->
+
+        <div class="list_carousel">
+
+        <ul id="list_product" class="list_product">
+        {foreach $promos as $p}
+        
+        <li class="">
+            <div class="grid_3 product">             
+              <div class="prev">
+                <a href="{$p.frontend_url}" title="{$p.name}{if $p.summary} &mdash; {strip_tags($p.summary)}{/if}">
+                {$wa->shop->productImgHtml($p, '210x210', ['itemprop' => 'image', 'default' => "`$wa_theme_url`img/dummy200.png"])}
+                    </a></div>
+              <h3 class="title">{$p.name}</h3>
+              <div class="cart">
+                <div class="price">
+                <div class="vert">
+                  <div class="price_new">{shop_currency($p.price, $p.currency)}</div>
+                  <div class="price_old"></div>
+                </div>
+                </div>
+                <form class="addtocart" method="post" action="{$wa->getUrl('/frontendCart/add')}">
+                <input type="hidden" name="product_id" value="{$p.id}">
+                <input type="submit" value="Купить">
+                </form>
+              </div>
+            </div>
+          </li>  
+        {/foreach}
+    </ul><!-- #list_product -->
+  </div><!-- .list_carousel -->
+</div><!-- .carousel -->
+</div>
+{/if}
+
+{if $bestsellers && count($bestsellers)}
+<div class="container_12" style="display:block;height:435px;overflow:hidden;">  
+<div class="carousel">
+        <div class="c_header">
+          <div class="grid_10">
+            <h2>Самые продаваемые:</h2>
+          </div><!-- .grid_10 -->
+
+          <div class="grid_2">
+            <a id="next_c2" class="next arows" href="#"><span>Вперёд</span></a>
+            <a id="prev_c2" class="prev arows" href="#"><span>Назад</span></a>
+           </div><!-- .grid_2 -->
+        </div><!-- .c_header -->
+
+        <div class="list_carousel">
+
+        <ul id="list_product2" class="list_product">
+        {foreach $bestsellers as $p}
+        
+        <li class="">
+            <div class="grid_3 product">             
+              <div class="prev">
+                <a href="{$p.frontend_url}" title="{$p.name}{if $p.summary} &mdash; {strip_tags($p.summary)}{/if}">
+                {$wa->shop->productImgHtml($p, '210x210', ['itemprop' => 'image', 'default' => "`$wa_theme_url`img/dummy200.png"])}
+                    </a></div>
+              <h3 class="title">{$p.name}</h3>
+              <div class="cart">
+                <div class="price">
+                <div class="vert">
+                  <div class="price_new">{shop_currency($p.price, $p.currency)}</div>
+                  <div class="price_old"></div>
+                </div>
+                </div>
+                <form class="addtocart" method="post" action="{$wa->getUrl('/frontendCart/add')}">
+                <input type="hidden" name="product_id" value="{$p.id}">
+                <input type="submit" value="Купить">
+                </form>
+              </div>
+            </div>
+          </li>  
+        {/foreach}
+    </ul><!-- #list_product -->
+  </div><!-- .list_carousel -->
+</div><!-- .carousel -->
+</div>
+{/if}
+
+<div id="content_bottom">
+        <div class="grid_4">
+          <div class="bottom_block about_as">
+            <h3>About Us</h3>
+            <p>A block of text is a stack of line boxes. In the case of 'left', 'right' and 'center', this property specifies how the inline-level boxes within each line box align with respect to the line box's </p>
+            <p>Alignment is not with respect to the viewport. In the case of 'justify', this property specifies that the inline-level boxes are to be made flush with both sides of the line box if possible.</p>
+            <p>by expanding or contracting the contents of inline boxes, else aligned as for the initial value.</p>
+          </div><!-- .about_as -->
+        </div><!-- .grid_4 -->
+
+        <div class="grid_4">
+          <div class="bottom_block news">
+            <h3>News</h3>
+            <ul>
+              <li>
+                <time datetime="2012-03-03">3 january 2012</time>
+                <a href="#">A block of text is a stack of line boxes. In the case of 'left', 'right' and 'center', this property specifies</a>
+              </li>
+
+              <li>
+                <time datetime="2012-02-03">2 january 2012</time>
+                <a href="#">A block of text is a stack of line boxes. In the case of 'left', 'right' and 'center', this property specifies</a>
+              </li>
+
+              <li>
+                <time datetime="2012-01-03">1 january 2012</time>
+                <a href="#">A block of text is a stack of line boxes. In the case of 'left', 'right' and 'center', this property specifies how the inline-level boxes within each line</a>
+              </li>
+            </ul>
+          </div><!-- .news -->
+        </div><!-- .grid_4 -->
+
+        <div class="grid_4">
+          <div class="bottom_block newsletter">
+            <h3>Newsletter</h3>
+            <p>Cursus in dapibus ultrices velit fusce. Felis lacus erat. Fermentum parturient lacus tristique habitant nullam morbi et odio nibh mus dictum tellus erat.</p>
+            <form class="letter_form">
+              <input type="email" name="newsletter" class="l_form" value="" placeholder="Enter your email address..."/>
+	      <input type="submit" id="submit" value="" />
+	    </form>
+            <div class="lettel_description">
+              Vel lobortis gravida. Cursus in dapibus ultrices velit fusce. Felis lacus erat.
+            </div><!-- .lettel_description -->
+          </div><!-- .newsletter -->
+        </div><!-- .grid_4 -->
+
+        <div class="clear"></div>
+      </div><!-- #content_bottom -->
+      <div class="clear"></div>

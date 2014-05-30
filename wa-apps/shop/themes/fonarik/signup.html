@@ -1,0 +1,20 @@
+<div id="sidebar" class="grid_3">
+<aside>
+<nav class="left_menu">
+<ul class="menu-h">
+    <li><a href="/login/">Вход</a></li>
+</ul>
+</nav>
+</aside>
+</div><!-- .sidebar -->
+
+<div id="content" class="grid_9">
+    <div id="page" role="main">
+        {if !empty($contact)}
+            <h1>[`Thank you!`]</h1>
+            <p>[`You have successfully signed up.`]</p>
+        {else}
+            <p>Для регистрации обратитесь к Вашему менеджеру</p>
+        {/if}
+    </div>
+</div>

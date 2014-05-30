@@ -1,0 +1,16 @@
+1e1e76af3103a5d6fc5c06f672a9809b *img/guestbook.png
+a285da79a1cf95556e4eb1fd40059097 *lib/.htaccess
+aaca64e830fa1930d2df30e6b56b1622 *lib/actions/guestbookBackend.actions.php
+69d4988ba19334e5b2432821009319dc *lib/actions/guestbookFrontend.action.php
+6f166fa3e9d3457450be6b00bca51a77 *lib/config/app.php
+f3dd8b77c2f6804dc5fe2146fae88bc0 *lib/config/build.php
+88412c7852a0c7f8c5735f85348ea673 *lib/config/db.php
+f136913d102181fc09a957ea5a8e6b50 *lib/config/guestbookRightConfig.class.php
+25e5796c9f6514e742a3b4cd04842340 *lib/models/guestbook.model.php
+a285da79a1cf95556e4eb1fd40059097 *locale/.htaccess
+71e70b7b298a4347a541e737e49c3fe2 *locale/en_US/LC_MESSAGES/guestbook.po
+4033b9c3b7b2fbfafcfde61db60e06cb *locale/ru_RU/LC_MESSAGES/guestbook.mo
+5aae15db41cd060870052751e63d2cd4 *locale/ru_RU/LC_MESSAGES/guestbook.po
+a285da79a1cf95556e4eb1fd40059097 *templates/.htaccess
+841e457d09aeb5b611fa939bfcad49ea *templates/actions/backend/BackendDefault.html
+f1b5aa11b048ad25617bf0d32d694b54 *templates/actions/frontend/Frontend.html

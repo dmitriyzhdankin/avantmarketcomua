@@ -1,0 +1,23 @@
+
+<div id="sidebar" class="grid_3">
+<aside>
+<nav class="left_menu">
+<ul class="menu-h">
+    <li><a href="{$wa->shop->productUrl($product)}">[`Overview`]</a></li>
+    <li>
+        <a href="{$wa->shop->productUrl($product, 'reviews')}">[`Reviews`]</a>
+        <span class="hint" itemprop="reviewCount">{$reviews_total_count}</span>
+    </li>
+    {foreach $product.pages as $p}
+    <li{if $page.id == $p.id} class="current"{/if}><a href="{$wa->shop->productUrl($product, 'page', ['page_url' => $p.url])}">{$p.name|escape}</a></li>
+    {/foreach}
+</ul>
+</nav>
+</aside>
+    {include file="sidebar.html"}
+</div><!-- .sidebar -->
+<div id="content" class="grid_9">
+<h1>{$page.title|escape}</h1>
+
+    {$page.content}
+</div>

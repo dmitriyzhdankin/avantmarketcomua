@@ -1,0 +1,17 @@
+5c2754e9a2b08e49395e4fb8a5a30ca3 *img/qiwi.png
+52a844e53e544a0c45d8ea69c311acdd *img/qiwi16.png
+a285da79a1cf95556e4eb1fd40059097 *lib/.htaccess
+acf08eb46996181601cc19da5bc5cd53 *lib/config/build.php
+9ff412845090890caff8f037339dcb8b *lib/config/guide.php
+02a131c8895fcc701a7ff97adffcf7a1 *lib/config/plugin.php
+a0b163cac8cab0d9978583ffa42e84c5 *lib/config/request.xml
+3e5f4c925d1ea59c351ae94ceea2c43b *lib/config/settings.php
+9492a8fea9e9801ff643697124ca1981 *lib/qiwiPayment.class.php
+a285da79a1cf95556e4eb1fd40059097 *templates/.htaccess
+7d271d523d65f10df60f14e85411f24a *templates/payment.html
+a285da79a1cf95556e4eb1fd40059097 *vendors/.htaccess
+b135db6c7951f9193c698c83b782a292 *vendors/nusoap/nusoap.php
+3791636d3e646210ecd24fd779fc11fa *vendors/qiwi/IShopClientWS.wsdl
+24f19409d5251b5233ed6872ceff4aee *vendors/qiwi/IShopClientWSService.php
+befa6f061bdc5bac41eaa73753be446d *vendors/qiwi/IShopServerWS.wsdl
+2c495aa5e584300341e7cb53023da6ad *vendors/qiwi/IShopServerWSService.php

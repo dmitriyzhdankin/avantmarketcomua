@@ -1,0 +1,63 @@
+<div id="sidebar" class="grid_3">
+<aside>
+<nav class="left_menu">
+<ul class="menu-h">
+    <li class="current"><a href=""><strong>[`My orders`]</strong></a></li>
+    <li><a href="{$wa->getUrl('/frontend/myProfile')}"><strong>[`My profile`]</strong></a></li>
+    {if shopAffiliate::isEnabled()}
+    <a href="{$wa->getUrl('/frontend/myAffiliate')}"><strong>[`Affiliate program`]</strong></a>
+    {/if}
+     <li><a href="/?logout"><strong>Выйти</strong></a></li>
+</ul>
+</nav>
+</aside>
+</div><!-- .sidebar -->
+
+<div id="content" class="grid_9">
+<h1>[`My orders`]</h1>
+
+<table class="table">
+{foreach $orders as $o}
+    <tr>
+        <td class="nowrap">
+            <a href="{$o.url}" class="bold">
+                {$o.id_str}
+            </a>
+        </td>
+        <td class="nowrap">
+            <span class="nowrap order-status" style="{$o.state->getStyle(1)}">
+                {$o.state->getName()}
+            </span>
+        </td>
+        <td>
+            {if !empty($o.items)}
+                {foreach $o.items as $i}
+                    {$i.name|escape} <span class="gray">x {$i.quantity}</span><br />
+                {/foreach}
+            {/if}
+        </td>
+        <td>
+            {if $o.shipping_name}
+                {$o.shipping_name|escape}
+            {else}
+                &nbsp;
+            {/if}
+        </td>
+        <td>
+            {if $o.payment_name}
+                {$o.payment_name|escape}
+            {else}
+                &nbsp;
+            {/if}
+        </td>
+        <td>
+            <span class="gray">{$o.create_datetime|wa_date:'humandate'}</span>
+        </td>
+    </tr>
+{foreachelse}
+	<tr class="no-border">
+        <td>[`You have no order history yet.`]</td>
+  	</tr>
+{/foreach}
+</table>
+</div>

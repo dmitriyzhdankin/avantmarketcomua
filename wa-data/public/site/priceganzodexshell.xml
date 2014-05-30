@@ -1,0 +1,921 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>oleg</Author>
+  <LastAuthor>oleg</LastAuthor>
+  <Revision>1</Revision>
+  <TotalTime>0</TotalTime>
+  <LastPrinted>2013-06-14T14:31:42Z</LastPrinted>
+  <Created>2013-06-14T14:31:42Z</Created>
+  <LastSaved>2013-06-14T14:31:42Z</LastSaved>
+  <Version>14.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+  <Colors>
+   <Color>
+    <Index>16</Index>
+    <RGB>#B4B4B4</RGB>
+   </Color>
+  </Colors>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>5895</WindowHeight>
+  <WindowWidth>11400</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <TabRatio>0</TabRatio>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s22">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+  </Style>
+  <Style ss:ID="s23">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Font ss:FontName="Courier New" x:CharSet="1" x:Family="Swiss" ss:Size="14"
+    ss:Bold="1"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s24">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s25">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+  </Style>
+  <Style ss:ID="s26">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s27">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8" ss:Bold="1"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s28">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8" ss:Bold="1"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s29">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s30">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s33">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="9" ss:Bold="1"
+    ss:Italic="1"/>
+   <Interior ss:Color="#B4B4B4" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s34">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="9"
+    ss:Italic="1"/>
+   <Interior ss:Color="#B4B4B4" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s35">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="9"
+    ss:Italic="1"/>
+   <Interior ss:Color="#B4B4B4" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s36">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="9"
+    ss:Italic="1"/>
+   <Interior ss:Color="#B4B4B4" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s37">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s38">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s39">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="0.00;[Red]\-0.00"/>
+  </Style>
+  <Style ss:ID="s40">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s41">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s42">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <NumberFormat/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="TDSheet">
+  <Table ss:ExpandedColumnCount="256" ss:ExpandedRowCount="71" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="42" ss:DefaultRowHeight="11.25">
+   <Column ss:StyleID="s22" ss:AutoFitWidth="0" ss:Width="5.25"/>
+   <Column ss:StyleID="s22" ss:AutoFitWidth="0" ss:Width="230.25"/>
+   <Column ss:StyleID="s22" ss:AutoFitWidth="0" ss:Width="65.25"/>
+   <Column ss:StyleID="s22" ss:AutoFitWidth="0" ss:Width="72" ss:Span="1"/>
+   <Column ss:Index="6" ss:StyleID="s22" ss:AutoFitWidth="0" ss:Width="65.25"
+    ss:Span="2"/>
+   <Column ss:Index="9" ss:AutoFitWidth="0" ss:Width="48" ss:Span="247"/>
+   <Row ss:AutoFitHeight="0" ss:Height="19.3125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Авантмаркет</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32.8125">
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">www.avantmarket.com.ua &#10;info@avantmarket.com.ua&#10;044 232 81 07, 057 760 13 69</Data></Cell>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="9.5625" ss:StyleID="s29">
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125" ss:StyleID="s29">
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">В валютах цен.</Data></Cell>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125" ss:StyleID="s29">
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">Цены указаны на 14.06.2013</Data></Cell>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125" ss:StyleID="s29">
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25" ss:Hidden="1" ss:StyleID="s22"/>
+   <Row ss:AutoFitHeight="0" ss:Height="23.0625" ss:StyleID="s22">
+    <Cell ss:Index="2" ss:MergeDown="1" ss:StyleID="s41"><Data ss:Type="String">Номенклатура</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s42"><Data ss:Type="String">Номенклатура.Артикул </Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s42"><Data ss:Type="String">..ОПТ мелкий (F, G, G, M - 25, P - 15, S - 50, D - 40)</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s42"><Data ss:Type="String">.ЦЕНА продажи(розн)</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s42"><Data ss:Type="String">Склад №1(офис)</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s42"><Data ss:Type="String">Склад Киев </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="22.6875" ss:StyleID="s22"/>
+   <Row ss:AutoFitHeight="0" ss:Height="12.5625">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">09 Ganzo</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s35"/>
+    <Cell ss:StyleID="s35"/>
+    <Cell ss:StyleID="s36"/>
+    <Cell ss:StyleID="s36"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Multi Tool Ganzo G101-H</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G101-H</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">21.6</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">51</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Multi Tool Ganzo G104 S</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G104S</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Multi Tool Ganzo G105 (G3130)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G105</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">19.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">127</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">29</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Multi Tool Ganzo G108</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G108</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">19.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Multi Tool Ganzo G201-H</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G201-H</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">23.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">29</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">98</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Multi Tool Ganzo G2016-P</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G2016-P</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">17.600000000000001</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Multi Tool Ganzo G2019 S</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G2019S</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">49</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">29</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Multi Tool Ganzo G202</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G202</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">95</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Multi Tool Ganzo G202B</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G202B</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">24.8</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">31</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Multi Tool Ganzo G301</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G301</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">39.200000000000003</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">49</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Multi Tool Ganzo G301-H</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G301-H</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">42.4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">53</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">83</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Multi Tool Ganzo G301-В</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G301-В</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">44.8</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">56</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">55</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Нож Ganzo G701 black</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G701B</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">22.4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Нож Ganzo G701 white</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G701W</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">22.4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Нож Ganzo G702</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G702</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Нож Ganzo G704</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G704</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">109</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Нож Ganzo G706-2</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G706-2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">20.8</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Нож Ganzo G707</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G707</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">23.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">29</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">70</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Нож Ganzo G708</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G708</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">24.8</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">31</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">47</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Нож Ganzo G710</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G710</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">30.4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">38</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Нож Ganzo G711, чехол</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G711</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">30.4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">38</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Нож Ganzo G712, чехол</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G712</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">30.4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">38</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">63</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Нож Ganzo G713, чехол</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G713</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">28.8</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">36</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">66</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Нож Ganzo G714, чехол</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G714</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Нож Ganzo G715, чехол</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">G715</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">28.8</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">36</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.5625">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">10 Dexshell</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s35"/>
+    <Cell ss:StyleID="s35"/>
+    <Cell ss:StyleID="s36"/>
+    <Cell ss:StyleID="s36"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Coolvent L Носки водонепроницаемые</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8828L</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">19.29</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Coolvent Lite L Носки водонепроницаемые</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8838L</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">18.57</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Coolvent Lite M Носки водонепроницаемые</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8838M</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">18.57</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">43</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Coolvent Lite S Носки водонепроницаемые</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8838S</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">18.57</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">39</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Coolvent Lite XL Носки водонепроницаемые</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8838XL</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">18.57</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Coolvent M Носки водонепроницаемые </Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8828M</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">19.29</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Coolvent S Носки водонепроницаемые </Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8828S</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">19.29</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Coolvent XL Носки водонепроницаемые </Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8828XL</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">19.29</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Overcalf L Носки водонепроницаемые</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8830L</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">49</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Overcalf M Носки водонепроницаемые</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8830M</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">49</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Overcalf S Носки водонепроницаемые</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8830S</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">49</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Thermlite L Носки водонепроницаемые </Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8826L</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">23.57</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">43</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Thermlite M Носки водонепроницаемые </Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8826M</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">23.57</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">83</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Thermlite S Носки водонепроницаемые </Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8826S</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">23.57</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Thermlite XL Носки водонепроницаемые </Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8826XL</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">23.57</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">43</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Trekking L Носки водонепроницаемые </Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8836L</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">26.43</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Trekking M Носки водонепроницаемые </Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8836M</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">26.43</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">49</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Trekking S Носки водонепроницаемые </Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8836S</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">26.43</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Dexshell Trekking XL Носки водонепроницаемые </Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DS8836XL</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">26.43</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Перчатки водонепроницаемые Dexshell TechShield L</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DG478L</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">32.14</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">45</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Перчатки водонепроницаемые Dexshell TechShield M</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DG478M</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">32.14</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">45</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Перчатки водонепроницаемые Dexshell TechShield S</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DG478S</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">32.14</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">45</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Перчатки водонепроницаемые Dexshell ThermFit L</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DG326L</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Перчатки водонепроницаемые Dexshell ThermFit M</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DG326M</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">29</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Перчатки водонепроницаемые Dexshell ThermFit S</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DG326S</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Перчатки водонепроницаемые Dexshell ToughShield L</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DG458L</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">33.57</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">47</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Перчатки водонепроницаемые Dexshell ToughShield M</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DG458M</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">33.57</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">47</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Шапка водонепроницаемая Dexshell голубая с бубоном</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DH352-BS</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">18.57</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Шапка водонепроницаемая Dexshell голубой градиент</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DH332N-BG</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">18.57</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Шапка водонепроницаемая Dexshell красная</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DH372-W</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">17.86</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Шапка водонепроницаемая Dexshell оранжевый градиент</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DH332N-OG</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">18.57</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Шапка водонепроницаемая Dexshell розовая с бубоном</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DH352-PS</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">18.57</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Шапка водонепроницаемая Dexshell серая</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DH372-G</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">17.86</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Шапка водонепроницаемая Dexshell черная</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DH372-B</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">17.86</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <NoSummaryRowsBelowDetail/>
+   <NoSummaryColumnsRightDetail/>
+   <DisplayPageBreak/>
+   <Selected/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

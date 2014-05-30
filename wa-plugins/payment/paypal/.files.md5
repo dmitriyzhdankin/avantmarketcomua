@@ -1,0 +1,9 @@
+7889113c4fdf3300d1e9db80747f1b66 *img/paypal.png
+aac1d5c8a37baae956e940472f73f50a *img/paypal16.png
+a285da79a1cf95556e4eb1fd40059097 *lib/.htaccess
+c7b1c8c9c05e31cfcb9423f865c56fee *lib/config/build.php
+a730e8c3710ec08499af5abeea580c1c *lib/config/plugin.php
+7c30385e73f878f6afe27678e62710f3 *lib/config/settings.php
+8086885195c960ba5d9fcfb2e0336f39 *lib/paypalPayment.class.php
+a285da79a1cf95556e4eb1fd40059097 *templates/.htaccess
+ccf71af4b0f6a083f9277d61ce6e1383 *templates/payment.html

@@ -1,0 +1,22 @@
+<div id="sidebar" class="grid_3">
+<aside>
+<nav class="left_menu">
+<ul class="menu-h">
+    <li><a href="{$wa->getUrl('/frontend/myOrders')}"><strong>[`My orders`]</strong></a></li>
+    <li><a href="{$wa->getUrl('/frontend/myProfile')}"><strong>[`My profile`]</strong></a></li>
+    {if shopAffiliate::isEnabled()}
+    <a href="{$wa->getUrl('/frontend/myAffiliate')}"><strong>[`Affiliate program`]</strong></a>
+    {/if}
+     <li><a href="/?logout"><strong>Выйти</strong></a></li>
+</ul>
+</nav>
+</aside>
+</div><!-- .sidebar -->
+
+<div id="content" class="grid_9">
+<h1>{sprintf('[`Hi %s`]', {$wa->user('firstname')})}</h1>
+
+<!-- plugin hook: 'frontend_my' -->
+{* @event frontend_my.%plugin_id% *}
+{foreach $frontend_my as $_}{$_}{/foreach}
+</div>

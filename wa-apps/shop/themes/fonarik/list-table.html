@@ -1,0 +1,46 @@
+    {foreach $products as $p}
+             <div class="product_li" itemscope itemtype ="http://schema.org/Product">
+				<div class="grid_3">
+					<div class="prev">
+						<a href="{$p.frontend_url}" title="{$p.name|escape}{if $p.summary} &mdash; {strip_tags($p.summary)}{/if}">
+                        {$badge_html = $wa->shop->badgeHtml($p.badge)}
+                        {if $badge_html}
+                            <div class="corner top right">{$badge_html}</div>
+                        {/if}
+                        {$wa->shop->productImgHtml($p, '200x200', ['itemprop' => 'image', 'default' => "`$wa_theme_url`img/dummy200.png"])}</a>
+					</div><!-- .prev -->
+				</div><!-- .grid_3 -->
+				
+				<div class="grid_4">
+					<div class="entry_content">
+						<a href="{$p.frontend_url}" title="{$p.name|escape}{if $p.summary} &mdash; {strip_tags($p.summary)}{/if}">
+                        <h3 class="title" itemprop="name">{$p.name}</h3></a>
+						{if $p.rating > 0}
+                        <div class="review">
+                           {$wa->shop->ratingHtml($p.rating)}
+                        {if $p.rating_count}<span>{$p.rating_count} оценок</span>{/if}
+						</div>
+                        {/if}
+						{if $p.summary}<p itemprop="description">{$p.summary}</p>{/if}
+						<a class="more" href="{$p.frontend_url}" title="{$p.name|escape}{if $p.summary} &mdash; {strip_tags($p.summary)}{/if}">Подробнее</a>
+					</div><!-- .entry_content -->
+				</div><!-- .grid_4 -->
+				
+				<div class="grid_2">
+					<div class="cart">
+						<div class="price">
+							<div class="price_new">{shop_currency($p.price)}</div>
+							{if $p.compare_price > 0}<div class="price_old">{shop_currency($p.compare_price)}</div>{/if}
+						</div>
+                        <form class="addtocart" method="post" action="{$wa->getUrl('/frontendCart/add')}">
+                          <input type="hidden" name="product_id" value="{$p.id}">
+                          <input type="submit" value="Купить">
+                        </form>
+					</div><!-- .cart -->
+				</div><!-- .grid_2 -->
+				
+				<div class="clear"></div>
+			</div><!-- .article -->
+
+    {/foreach}
+

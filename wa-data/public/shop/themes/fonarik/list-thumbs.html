@@ -1,0 +1,39 @@
+   {foreach $products as $p}
+   
+		     <div class="grid_3 product" itemscope itemtype ="http://schema.org/Product" style="height:340px;" >
+             {if $wa->user()->getName() and $p.sku.purchase_price gt 0}{*$p.price = $p.sku.purchase_price*}{/if}
+             {$bImage =  $wa->shop->getProductImgHtml($p, '300x0', ['itemprop' => 'image', 'default' => "`$wa_theme_url`img/dummy200.png"])|regex_replace:'/^.+src="([^"]+)".*$/':'\1'}
+                {$sCount = $bImage|count_characters}                    
+                {$bImage =  $bImage|substr:1:$sCount}
+			    <div class="prev">
+                <a href="{$p.frontend_url}" title="{$p.name}{if $p.summary} &mdash; {strip_tags($p.summary)}{/if}"
+                style="display:block;width:210px;height:210px;overflow:hidden;background-image:url({$wa->url(true)}{$bImage});background-size:contain;background-position:center;background-repeat:no-repeat;"
+                ></a></div>
+                    
+                   
+              <h3 class="title">{$p.name}</h3>
+             {if $p.stock}<h3 class="title" style="height:20px;">{foreach $p.stock item=instock}{$instock.name}:
+               {if $instock.count lt 1} нет
+   {elseif $instock.count ge 1 and $instock.count lte $instock.critical_count} мало
+   {elseif $instock.count gt $instock.critical_count and $instock.count lte $instock.low_count} средне
+   {elseif $instock.count gt $instock.low_count} много{/if}; {/foreach}</h3>{/if}
+              <div class="cart">
+                <div class="price">
+                <div class="vert">
+                 {if $wa->user()->getName() and $p.sku.purchase_price gt 0}
+                  <div class="price_new">{shop_currency($p.sku.purchase_price)}</div><div class="price_old">{shop_currency($p.price)}</div>
+                 {else}<div class="price_new">{shop_currency($p.price)}</div><div class="price_old"></div>{/if}
+                  
+                </div>
+                </div>
+                 {if $wa->shop->settings('ignore_stock_count') || $p.count === null || $p.count > 0}
+                <form class="addtocart" method="post" action="{$wa->getUrl('/frontendCart/add')}">
+                <input type="hidden" name="product_id" value="{$p.id}">
+                <input {if $p.price eq 0}disabled="disabled" style="background:#CCC;"{/if} type="submit" value="Заказать">
+                </form><link itemprop="availability" href="http://schema.org/InStock" />
+                {else}
+                    <link itemprop="availability" href="http://schema.org/OutOfStock" />
+                {/if}
+              </div>
+            </div> 
+    {/foreach}

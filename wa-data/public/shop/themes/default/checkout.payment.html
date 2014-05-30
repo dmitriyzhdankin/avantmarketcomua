@@ -1,0 +1,13 @@
+<ul class="checkout-options">
+    {foreach $checkout_payment_methods as $pm}
+    <li>
+        <h3>
+            <label>
+                <input type="radio" name="payment_id" value="{$pm.id}" {if $pm.id == $payment_id}checked{/if}>
+                {$pm.name}
+            </label>
+        </h3>
+        {if $pm.description}<p>{$pm.description}</p>{/if}
+    </li>
+    {/foreach}
+</ul>

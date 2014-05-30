@@ -1,0 +1,24 @@
+<div id="sidebar" class="grid_3">
+    {include file="sidebar.html"}
+</div>
+
+<div id="content" class="grid_9">
+
+    <h1 class="category-name">
+        {$title}
+    </h1>
+
+    <!-- plugin hook: 'frontend_search' -->
+    {* @event frontend_search.%plugin_id% *}
+    {foreach $frontend_search as $_}{$_}{/foreach}
+
+    <div class="listing_product">
+    {include file='list-table.html'}
+    <div class="clear"></div>
+    </div>
+    {*
+    or use the line below if you want plain table view instead of thumbs
+    {include file='list-thumbs.html'}
+    *}
+
+</div>

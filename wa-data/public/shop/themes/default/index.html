@@ -1,0 +1,409 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head profile="http://gmpg.org/xfn/11">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{$wa->title()|escape}</title>
+    <meta name="Keywords" content="{$wa->meta('keywords')|escape}" />
+    <meta name="Description" content="{$wa->meta('description')|escape}" />
+    <meta name="robots" content="nofollow" />
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6681162-13']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript" >        
+      function updatePage() {
+        
+        if (xmlHttp.readyState == 4) {
+        var response = xmlHttp.responseText;
+	if(response) {
+            jQuery('.delete-number').hide();
+            jQuery('.change_phoneMain').html('<span style="font-size:15px;">' + response + '</span>');
+	    jQuery('.free_show').show();
+            jQuery('.footer_phone').html(response);
+        }
+        }
+      }  
+        				
+        /* Создание нового объекта XMLHttpRequest для общения с Web-сервером */
+        var xmlHttp = false;
+        /*@cc_on @*/
+        /*@if (@_jscript_version >= 5)
+        try {
+          xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+        } catch (e) {
+          try {
+            xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+          } catch (e2) {
+            xmlHttp = false;
+          }
+        }
+        @end @*/
+        
+        if (!xmlHttp && typeof XMLHttpRequest != 'undefined') {
+          xmlHttp = new XMLHttpRequest();
+        }
+        
+jQuery(document).ready(function(){
+        // Создать URL для подключения
+        var url = "/load_phone.php";
+      
+        // Открыть соединение с сервером
+        xmlHttp.open("GET", url, true);
+      
+        // Установить функцию для сервера, которая выполнится после его ответа
+        xmlHttp.onreadystatechange = updatePage;
+      
+        // SПередать запрос
+        xmlHttp.send(null);
+      });      
+</script>
+
+  <link rel="shortcut icon" href="{$wa_theme_url}images/favicon.png">
+  <link rel="stylesheet" href="{$wa_theme_url}style.css" type="text/css" media="screen" />
+  <link href="{$wa_theme_url}css/grid.css" media="screen" rel="stylesheet" type="text/css">
+
+  <script src="{$wa_theme_url}js/jquery-1.7.2.min.js" ></script>
+  <script src="{$wa_theme_url}js/html5.js" ></script>
+ 
+  <script>
+       $(document).ready(function(){
+	      $("button").click(function(){
+		     $(this).addClass('click')
+	      });
+       })
+  </script>
+
+</head>
+<body>
+                           
+  <div class="container_12">
+    <div id="top">
+      <div class="grid_3" style="width:auto;">
+        <div class="phone_top">
+         <span id="phoneMain"><span style="font-size:15px;">8-800-555-1092</span></span>
+         <span id="free"><span>бесплатно</span> по России</span>
+        </div><!-- .phone_top -->
+      </div><!-- .grid_3 -->
+      
+       <div class="grid_3" style="width:auto;">
+        <div class="phone_top">         
+         <span id="phoneMainUa" class="change_phoneMain" style="display:inline-block;"><span style="font-size:15px;">0-800-50-75-85</span></span>
+         <span id="free" class="delete-number" style="display:inline-block;">бесплатно по Украине</span>
+		 <span id="freeUa" class="free_show" style="display:none;">Украина, г.Киев</span>
+        </div><!-- .phone_top -->
+      </div><!-- .grid_3 -->
+      
+       <div class="grid_3" style="width:auto;">
+        <div class="phone_top">
+		 <span id="phoneMainBu" style="display:inline-block;"><span style="font-size:15px;">(029) 694-99-01</span></span>
+         <span id="freeBu" style="display:inline-block;">Беларусь, г.Минск</span>
+        </div><!-- .phone_top -->
+      </div><!-- .grid_3 -->
+    </div>
+
+    <div class="clear"></div>
+
+    <header id="branding">
+      <div class="grid_3" style="width:auto;">
+        <hgroup>
+          <h1 id="site_logo" ><a href="{$wa_url}" title="{$wa->accountName()}">
+          <img src="{$wa_theme_url}/images/logo.jpg" alt="{$wa->accountName()}"/></a></h1>
+        </hgroup>
+      </div><!-- .grid_3 -->
+
+
+ <div class="grid_6" style="width:auto;float:right;">
+ <nav class="private">
+          <ul>
+            <li><form method="POST" accept-charset="utf-8" id="siteheart_button_121106" action="https://siteheart.com/webconsultation/121106?byhref=1" target="siteheart_button_121106" >
+					<input type="hidden" name="_charset_">
+					<input type="hidden" name="data[your_name]" value="your_value"/>
+					<a href="https://siteheart.com/webconsultation/121106?byhref=1" target="siteheart_sitewindow_121106" onclick="_gaq.push(['_trackEvent', 'button', 'ask']);o=window.open;o('https://siteheart.com/webconsultation/121106', 'siteheart_sitewindow_121106', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;">
+					    Онлайн-консультация</a>
+					</form></li>
+		<li class="separator">|</li>
+            <li><a style="cursor:pointer;" onclick="popupWin = window.open('/zvonok.php', 'contacts', 'location,width=400,height=300,top=0'); popupWin.focus();return false;">Обратный звонок</a></li>
+          </ul>
+        </nav><!-- .private -->
+      </div><!-- .grid_6 -->
+      
+      <div class="grid_6" style="width:auto;float:right;">
+<form method="get" id="searchform" class="search" action="{$wa->getUrl('/frontend/search')}">
+<input class="text entry_form" type="search" name="query" {if !empty($query)}value="{$query}"{/if} id="search" placeholder="[`Find products`]" />
+<input type="submit" class="submit" name="Submit" value="Search Site" style="visibility:hidden;" />
+</form>       
+      </div>
+
+      <div class="grid_6" style="width:auto;float:left;">
+        <ul id="cart_nav">
+          <li>{$cart_total = $wa->shop->cart->total()}
+            <a class="cart_li" href="{$wa->getUrl('/frontend/cart')}">[`My shopping cart`]:<span> {shop_currency($cart_total)}</span></a>
+            
+            <!--<ul class="cart_cont">
+              <li class="no_border"><p>Recently added item(s)</p></li>
+              <li>
+                <a href="/product_page.html" class="prev_cart"><div class="cart_vert"><img src="images/cart_img.png" alt="" title="" /></div></a>
+                <div class="cont_cart">
+                  <h4>Caldrea Linen and Room Spray</h4>
+                  <div class="price">1 x $399.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+              
+              <li>
+                <a href="/product_page.html" class="prev_cart"><div class="cart_vert"><img src="images/produkt_slid1.png" alt="" title="" /></div></a>
+                <div class="cont_cart">
+                  <h4>Caldrea Linen and Room Spray</h4>
+                  <div class="price">1 x $399.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+	      <li class="no_border">
+		<a href="/shopping_cart.html" class="view_cart">View shopping cart</a>
+		<a href="/checkout.html" class="checkout">Procced to Checkout</a>
+	      </li>
+            </ul>-->
+          </li>
+        </ul>
+     </div>
+
+      
+    </header><!-- #branding -->
+  </div><!-- .container_12 -->
+
+  <div class="clear"></div>
+
+  <div id="block_nav_primary">
+    <div class="container_12">
+      <div class="grid_12">
+        <nav class="primary">
+          <ul>{$wa_test}</ul>
+        </nav><!-- .primary -->
+      </div><!-- .grid_12 -->
+    </div><!-- .container_12 -->
+  </div><!-- .block_nav_primary -->
+
+  <div class="clear"></div>
+
+  <div class="container_12">
+    <div class="grid_12" style="float:left;height:300px;overflow:hidden;">
+        <div class="slidprev"><span>Назад</span></div>
+        <div class="slidnext"><span>Вперёд</span></div>
+        <div id="slider">{$wa_banner}
+        </div>
+        <div id="myController">
+         <!-- <?php echo $controller;  ?>-->
+        </div>
+
+
+    </div><!-- .grid_12 -->
+  </div><!-- .container_12 -->
+
+  <div class="clear"></div>
+
+            
+            <!-- navigation breadcrumbs -->
+            {if isset($breadcrumbs)}
+                <div class="breadcrumbs">
+                    <a href="{$wa_app_url}">{$wa->accountName()}</a>
+                    {if $breadcrumbs}
+                        {foreach $breadcrumbs as $breadcrumb}
+                            » <a href="{$breadcrumb.url}">{$breadcrumb.name}</a>
+                        {/foreach}
+                    {else} » {/if}
+                </div>
+            {/if}
+<section id="main">  
+ 
+            {$content}
+
+  </section><!-- #main -->
+  
+  <div class="clear"></div>
+
+  <footer>
+    <div class="f_navigation">
+      <div class="container_12">
+        <div class="grid_3">
+          <h3><img src="http://fonarik.com/wp-content/uploads/2012/03/foot_rus.jpg"> Контакты в России:</h3>
+          <ul class="f_contact">
+            <li><h1 style="font-size:14px;">8-800-555-1092 *</h1></li>
+            <li>+7 (495) 646-13-69 - Москва</li>
+          </ul><!-- .f_contact -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3><img src="http://fonarik.com/wp-content/uploads/2012/03/foot_ukr.jpg"> Контакты в Украине:</h3>
+          <ul class="f_contact">
+            <li><h1 style="font-size:14px;">0-800-50-75-85 *</h1></li>
+            <li>(050) 076-16-36 - МТС</li>
+            <li>(063) 232-57-81  - Life:)</li>
+            <li>(044) 232-57-81 - Киев</li>
+            <li><a rel="nofollow" href="mailto:info@fonarik.com">info@fonarik.com</a></noindex></li>
+          </ul><!-- .f_contact -->
+        </div><!-- .grid_3 -->
+
+
+        <div class="grid_3">
+          <h3><img src="http://fonarik.com/wp-content/uploads/2012/03/foot_bel.jpg"> Контакты в Беларуси:</h3>
+          <ul class="f_contact">
+            <li><h1 style="font-size:14px;">(029) 694-99-01 - Минск</h1></li>
+          </ul><!-- .f_contact -->
+        </div><!-- .grid_3 -->
+
+
+        <div class="grid_3">
+          <h3 style="height:26px;">Покупка фонарей:</h3>
+          <nav class="f_menu">
+            <ul>
+			  <li><a href="http://avantmarket.com.ua/">Фонари оптом</a></li>
+              <li><a href="http://fonarik.com/market/category/takticheskie-fonari/">подствольные фонари</a></li>
+			  <li><a href="http://fonarik.com/market/category/podvodnye-fonari/">подводный фонарь</a></li>
+			  <li><a href="http://fonarik.com/market/category/nalobnye-i-hands-free-fonari/">налобный фонарик</a></li>
+			  <li><a href="http://fonarik.com/market/category/fonari-fenix/">Fenix</a></li>
+			  <li><a href="http://fonarik.com/market/">купить фонарь</a></li>
+			  <li><a href="http://fonarik.com/">фонари</a></li>
+			  <li><span></span></li>
+
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="clear"></div>
+      </div><!-- .container_12 -->
+      <div class="container_12"><h1 style="font-size:14px;">* Звонки в пределах Российской федерации или Украины <strong>БЕСПЛАТНО</strong></h1></div>
+    </div><!-- .f_navigation -->
+
+    <div class="f_info">
+      <div class="container_12">
+        <div class="grid_6">
+          <p class="copyright">www.fonarik.com &copy;2013</span> <span>All right reserved</span></p>
+        </div><!-- .grid_6 -->
+
+        <div class="grid_6">
+          <div class="soc">
+            <a class="google" href="#"></a>
+            <a class="twitter" href="#"></a>
+            <a class="facebook" href="#"></a>
+          </div><!-- .soc -->
+       
+
+<div class="counters" style="float:left;width:auto;">
+<div class="blocks" style="float:left;width:auto;">
+
+ <div id="poweredby">
+                <a title="[s`Powered by Webasyst`]" href="http://www.webasyst.com/" class="dots"></a>
+            </div>
+            <div id="copyright">
+                &copy; {time()|wa_datetime:"Y"} <a href="{$wa_url}">{$wa->accountName()}</a>
+
+                {if count($currencies) > 1}
+                <select id="currency">
+                    {$currency = $wa->shop->currency()}
+                    {foreach $currencies as $c_code => $c}
+                    <option value="{$c_code}" {if $c_code == $currency} selected{/if}>{$c.title}</option>
+                    {/foreach}
+                </select>
+                <script>
+                    $("#currency").change(function () {
+                        var url = location.href;
+                        if (url.indexOf('?') == -1) {
+                            url += '?';
+                        } else {
+                            url += '&';
+                        }
+                        location.href = url + 'currency=' + $(this).val();
+                    });
+                </script>
+                {/if}
+            </div>        
+{literal}
+<a href="http://metrika.yandex.ru/stat/?id=6066736&amp;from=informer"
+target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/6066736/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:6066736,type:0,lang:'ru'});return false}catch(e){}"/></a>
+
+<script type="text/javascript">
+(function (d, w, c) {
+(w[c] = w[c] || []).push(function() {
+try {
+w.yaCounter6066736 = new Ya.Metrika({id:6066736,
+webvisor:true,
+clickmap:true,
+trackLinks:true});
+} catch(e) { }
+});
+var n = d.getElementsByTagName("script")[0],
+s = d.createElement("script"),
+f = function () { n.parentNode.insertBefore(s, n); };
+s.type = "text/javascript";
+s.async = true;
+s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+if (w.opera == "[object Opera]") {
+d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+{/literal}
+<noscript><div style="float:left;width:auto;"><img src="//mc.yandex.ru/watch/6066736" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+					</div>
+					
+
+					<div class="blocks" style="float:left;width:auto;"> 
+							<a href="http://clck.yandex.ru/redir/dtype=stred/pid=47/cid=2508/*http://grade.market.yandex.ru/?id=54603&action=link"><img src="http://clck.yandex.ru/redir/dtype=stred/pid=47/cid=2505/*http://grade.market.yandex.ru/?id=54603&action=image&size=0" border="0" width="88" height="31" alt="Читайте отзывы покупателей и оценивайте качество магазина fonarik.com на Яндекс.Маркете" /></a>
+					</div>
+					
+				</div>
+                
+                 </div>
+				
+		</div>
+ 
+</div>
+
+
+<!--<script type="text/javascript"><!--
+reformal_wdg_w    = "713";
+reformal_wdg_h    = "460";
+reformal_wdg_domain    = "fonarik";
+reformal_wdg_mode    = 0;
+reformal_wdg_title   = "Fonarik.com";
+reformal_wdg_ltitle  = "Оставить отзыв";
+reformal_wdg_lfont   = "Verdana, Geneva, sans-serif";
+reformal_wdg_lsize   = "12px";
+reformal_wdg_color   = "#355bbd";
+reformal_wdg_bcolor  = "#516683";
+reformal_wdg_tcolor  = "#FFFFFF";
+reformal_wdg_align   = "right";
+reformal_wdg_charset = "utf-8";
+reformal_wdg_waction = 0;
+reformal_wdg_vcolor  = "#9FCE54";
+reformal_wdg_cmline  = "#E0E0E0";
+reformal_wdg_glcolor  = "#105895";
+reformal_wdg_tbcolor  = "#FFFFFF";
+reformal_wdg_tcolor_aw4  = "#3F4543";
+ 
+reformal_wdg_bimage = "http://fonarik.com/wp-content/themes/fonarik/images/leave_feedback.png";
+
+</script>
+
+<script type="text/javascript" language="JavaScript" src="http://widget.reformal.ru/tabn2v4.js"></script><noscript><a href="">Fonarik.com feedback</a> <a href="">поддержка <img src="http://widget.reformal.ru/i/reformal_ru.png" /></a></noscript> -->
+      
+    </div>
+  </footer>
+</body>
+</html>

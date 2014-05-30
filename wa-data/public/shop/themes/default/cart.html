@@ -1,0 +1,123 @@
+<script type="text/javascript" src="{$wa_theme_url}cart.js"></script>
+
+{if !$cart.total}
+
+    <h1>[`Shopping cart`]</h1>
+    <p>[`Your shopping cart is empty.`]</p>
+
+{else}
+
+    {*
+    <div class="sidebar right300px">
+        <h3>[`Better together`]</h3>
+        
+    </div>
+    *}  
+    <!-- general welcome text -->
+    <div class="content right300px">
+    
+        <h1>[`Shopping cart`]</h1>
+    
+        <form method="post">
+            <table class="table cart">
+                <!-- products -->
+                {foreach $cart.items as $item}
+                    <tr data-id="{$item.id}">
+                        <td class="min-width"><a href="{$wa->getUrl('/frontend/product', ['product_url' => $item.product.url])}" title="{$item.product.name|escape}">{$wa->shop->getProductImgHtml($item.product, '48x48')}</a></td>
+                        <td>
+                            <a href="{$wa->getUrl('/frontend/product', ['product_url' => $item.product.url])}" class="bold">{$item.product.name}</a>
+                            {if $item.sku_name}{$item.sku_name}{/if}
+                            <br /><br />
+                            {if !empty($item.services)}
+                            <div class="services">
+                                {foreach $item.services as $service_id => $s}
+                                <!-- one option -->
+                                <div {if !empty($s.id)}data-id="{$s.id}"{/if}>
+                                <label>
+                                    <input {if !empty($s.id)}checked{/if} type="checkbox" name="services[{$item.id}][]" value="{$service_id}"> {$s.name} {if $s.price && !isset($s.variants)}(+{shop_currency($s.price, $s.currency)}){/if}
+                                </label>
+                                {if isset($s.variants)}
+                                <select name="service_variant[{$item.id}][{$service_id}]" {if empty($s.id)}disabled{/if}>
+                                    {foreach $s.variants as $variant_id => $v}
+                                    <option {if $s.variant_id == $variant_id}selected{/if} value="{$variant_id}">{$v.name} (+{shop_currency($v.price, $s.currency)})</option>
+                                    {/foreach}
+                                </select>
+                                {/if}
+                                </div>
+                                {/foreach}
+
+                            </div>
+                            {/if}
+                        </td>
+                        <td class="align-center"><input type="text" name="quantity[{$item.id}]" value="{$item.quantity}" class="qty"></td>
+                        <td class="align-center item-total">{shop_currency($item.price * $item.quantity, $item.currency)}</td>
+                        <td><a class="delete" href="#" title="[`Remove from cart`]"><i class="icon16 remove"></a></td>
+                    </tr>
+                {/foreach}
+                
+                <!-- update button row -->
+                <tr style="display: none;" class="no-border">
+                    <td colspan="2"></td>
+                    <td><input type="button" value="[`Update`]"></td>
+                    <td colspan="2">&nbsp;</td>
+                </tr>
+                
+                <!-- discount coupon -->
+                {if 1}
+                <tr class="no-border">
+                    <td colspan="2" class="no-border">
+                        [`Discount coupon (if you have one)`]:
+                        <input type="text" name="coupon_code" value="{$coupon_code}"> <input type="submit"  value="[`Apply`]">
+                    </td>
+                    <td class="align-center">[`Discount`]</td>
+                    <td class="align-center">-{shop_currency($discount)}</td>
+                    <td>&nbsp;</td>
+                </tr>
+                {/if}
+                
+                <!-- affiliate -->
+                {*
+                <tr class="no-border">
+                    <td colspan="3" class="no-border">
+                        [`Use your current affiliate balance of %d to get a discount`]
+                        <a href="#" class="inline-link"><b><i>[`Cancel`]</i></b></a>
+                    </td>
+                    <td class="align-center">-{wa_currency($wa->customer->affiliateBonus(),$wa->shop->currency())}</td>
+                    <td>&nbsp;</td>
+                </tr>
+                *}
+                
+                <!-- TOTAL -->
+                <tr class="large no-border">
+                    <td colspan="3">[`Total`]</td>
+                    <td class="cart-total align-center total bold">{wa_currency($cart.total, $wa->shop->currency())}</td>
+                    <td>&nbsp;</td>
+                </tr>
+                
+                <!-- checkout -->
+                <tr class="no-border">
+                    <td colspan="3">
+                        {*
+                            <em class="gray">[`This order will add +%d points to your affiliate bonus.`]</em>
+                        *}
+                    </td>
+                    <td class="align-center bold">
+                        <input name="checkout" type="submit" value="[`Proceed to checkout`]" class="button large">
+                    </td>
+                    <td>&nbsp;</td>
+                </tr>
+                
+            </table>
+        </form>
+    
+    
+        
+    
+    
+        <div class="float-right block">
+            
+        </div>
+    
+    </div>
+
+{/if}

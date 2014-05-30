@@ -1,0 +1,162 @@
+
+
+    <!-- shop app css -->
+  <link rel="shortcut icon" href="{$wa_active_theme_url}images/favicon.png">
+  <link rel="stylesheet" href="{$wa_active_theme_url}style.css" type="text/css" media="screen" />
+  <link href="{$wa_active_theme_url}css/grid.css" media="screen" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="{$wa_active_theme_url}css/jquery.jqzoom.css" type="text/css">
+
+    <!-- js -->
+    <script type="text/javascript" src="{$wa_url}wa-content/js/jquery-wa/wa.core.js"></script>
+    {$wa->js()}    
+
+
+  <script src="{$wa_active_theme_url}js/html5.js" ></script>
+  <script src="{$wa_active_theme_url}js/jflow.plus.js" ></script>
+  <script src="{$wa_active_theme_url}js/jquery.carouFredSel-5.2.2-packed.js"></script>
+  <script src="{$wa_active_theme_url}js/checkbox.js"></script>
+  <script src="{$wa_active_theme_url}js/radio.js"></script>
+  <script src="{$wa_active_theme_url}js/selectBox.js"></script>
+  <script src="{$wa_active_theme_url}js/jquery.jqzoom-core.js" ></script>
+  <script type="text/javascript" src="{$wa_active_theme_url}custom.shop.js"></script>
+        
+
+<!--<script type="text/javascript" >        
+      function updatePage() {
+        
+        if (xmlHttp.readyState == 4) {
+        var response = xmlHttp.responseText;
+	if(response) {
+            jQuery('.delete-number').hide();
+            jQuery('.change_phoneMain').html('<span style="font-size:15px;">' + response + '</span>');
+	    jQuery('.free_show').show();
+            jQuery('.footer_phone').html(response);
+        }
+        }
+      }  
+        				
+        /* Создание нового объекта XMLHttpRequest для общения с Web-сервером */
+        var xmlHttp = false;
+        /*@cc_on @*/
+        /*@if (@_jscript_version >= 5)
+        try {
+          xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+        } catch (e) {
+          try {
+            xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+          } catch (e2) {
+            xmlHttp = false;
+          }
+        }
+        @end @*/
+        
+        if (!xmlHttp && typeof XMLHttpRequest != 'undefined') {
+          xmlHttp = new XMLHttpRequest();
+        }
+        
+jQuery(document).ready(function(){
+        // Создать URL для подключения
+        var url = "/load_phone.php";
+      
+        // Открыть соединение с сервером
+        xmlHttp.open("GET", url, true);
+      
+        // Установить функцию для сервера, которая выполнится после его ответа
+        xmlHttp.onreadystatechange = updatePage;
+      
+        // SПередать запрос
+        xmlHttp.send(null);
+      });      
+</script>-->
+
+<script>
+	$(document).ready(function(){
+	    $("#myController").jFlow({
+			controller: ".control", // must be class, use . sign
+			slideWrapper : "#jFlowSlider", // must be id, use # sign
+			slides: "#slider",  // the div where all your sliding divs are nested in
+			selectedWrapper: "jFlowSelected",  // just pure text, no sign
+			width: "984px",  // this is the width for the content-slider
+			height: "300px",  // this is the height for the content-slider
+			duration: 400,  // time in miliseconds to transition one slide
+			prev: ".slidprev", // must be class, use . sign
+			next: ".slidnext", // must be class, use . sign
+			auto: true
+    });
+	$('p').each(function() {
+    var $this = $(this);
+    if($this.html().replace(/\s|&nbsp;/g, '').length == 0)
+        $this.remove();
+	$("select.select").selectBox();
+});
+	
+  });
+  </script>
+  <script>
+	$(function() {
+	  $('#list_product').carouFredSel({
+		prev: '#prev_c1',
+		next: '#next_c1',
+		auto: false
+	  });
+     $('#list_product2').carouFredSel({
+		prev: '#prev_c2',
+		next: '#next_c2',
+		auto: false
+	  });
+	  $('#thumblist').carouFredSel({
+		prev: '#img_prev',
+		next: '#img_next',
+		scroll: 1,
+		auto: false,
+		circular: false,
+	  });
+	  /*
+	  $('#list_banners').carouFredSel({
+		prev: '#ban_prev',
+		next: '#ban_next',
+		scroll: 1,
+		auto: false
+	  });*/
+	  $(window).resize();
+	});
+  </script>
+  <script>
+       $(document).ready(function(){
+	      $("button").click(function(){
+		     $(this).addClass('click')
+	      });
+       })
+  </script>
+  
+  <script>
+	$(document).ready(function() {
+		$('.jqzoom').jqzoom({
+			zoomType: 'standard',
+			lens:true,
+			preloadImages: true,
+			alwaysOn:false
+		});
+	});
+  </script>
+
+  
+  <script>
+	$(document).ready(function() {
+		$('#wrapper_tab a.tab_link').click(function() {
+			if ($(this).attr('class') != $('#wrapper_tab').attr('class') ) {
+				$('#wrapper_tab').attr('class',$(this).attr('class'));
+			}
+			return false;
+		});
+	});
+  </script>
+
+    {if !empty($nofollow)}
+        <!-- "nofollow" for pages not to be indexed, e.g. customer account -->
+        <meta name="robots" content="noindex,nofollow" />
+    {/if}
+
+    <!-- plugin hook: 'frontend_head' -->
+    {* @event frontend_head.%plugin_id% *}
+    {foreach $frontend_head as $_}{$_}{/foreach}

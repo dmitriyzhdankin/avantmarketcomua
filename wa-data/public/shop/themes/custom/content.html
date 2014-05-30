@@ -1,0 +1,309 @@
+    <!-- plugin hook: 'frontend_header' -->
+    {* @event frontend_header.%plugin_id% *}
+    {foreach $frontend_header as $_}{$_}{/foreach}  
+                   
+  <div class="container_12" style="margin-top:-20px;">
+    <div id="top">
+      <div class="grid_3" style="width:auto;">
+      {$pages =  $wa->shop->pages()}
+      <div style="float:left;width:100%;padding-top:10px;">
+      {foreach $pages as $page}
+       <a href="{$page.url}" style="display:block;float:left;margin-right:25px;">{$page.name}</a>
+      {/foreach} 
+      </div>
+      </div><!-- .grid_3 -->
+      
+       
+      <div class="grid_3" style="width:auto;padding-top:10px;float:right;">
+       <!--{if count($currencies) > 1}
+               Валюта: <select id="currency" class="select" style="padding:0px 0px 0px 5px;width:127px;">
+                    {$currency = $wa->shop->currency()}
+                    {foreach $currencies as $c_code => $c}
+                    <option value="{$c_code}" {if $c_code == $currency} selected{/if}>{$c.title}</option>
+                    {/foreach}
+                </select>
+                <script>
+                    $("#currency").change(function () {
+                        var url = location.href;
+                        if (url.indexOf('?') == -1) {
+                            url += '?';
+                        } else {
+                            url += '&';
+                        }
+                        location.href = url + 'currency=' + $(this).val();
+                    });
+                </script>
+                {/if}-->
+      <div style="float:left;width:100%;text-align:right;padding-top:5px;">
+      {if $wa->user()->getName()} 
+      <a href="/my"><strong>Профиль</strong></a> | 
+      <a href="/market/?logout">Выйти</a>
+      {else}
+      <a href="/signup/">Регистрация</a> | 
+      <a href="/login/">Вход</a>
+      {/if}
+      </div>
+      </div>
+      
+    </div>
+
+    <div class="clear"></div>
+
+    <header id="branding">
+      <div class="grid_3" style="width:auto;margin-bottom:8px;" >
+        <hgroup>
+          <h1 id="site_logo" ><a href="{$wa_url}" title="{$wa->accountName()}">
+          <img src="{$wa_active_theme_url}images/logo.jpg" alt="{$wa->accountName()}"/></a></h1>
+        </hgroup>
+      </div><!-- .grid_3 -->
+
+<div class="grid_6" style="width:auto;float:right;">
+        <ul id="cart_nav">
+          <li>
+          <div id="cart">{$cart_total = $wa->shop->cart->total()}
+            <a class="cart_li" href="{$wa->getUrl('/frontend/cart')}">[`My shopping cart`]:
+            <span  class="cart-total">{shop_currency($cart_total)}</span></a></div>
+            
+            <!--<ul class="cart_cont">
+              <li class="no_border"><p>Recently added item(s)</p></li>
+              <li>
+                <a href="/product_page.html" class="prev_cart"><div class="cart_vert"><img src="images/cart_img.png" alt="" title="" /></div></a>
+                <div class="cont_cart">
+                  <h4>Caldrea Linen and Room Spray</h4>
+                  <div class="price">1 x $399.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+              
+              <li>
+                <a href="/product_page.html" class="prev_cart"><div class="cart_vert"><img src="images/produkt_slid1.png" alt="" title="" /></div></a>
+                <div class="cont_cart">
+                  <h4>Caldrea Linen and Room Spray</h4>
+                  <div class="price">1 x $399.00</div>
+                </div>
+                <a title="close" class="close" href="#"></a>
+                <div class="clear"></div>
+              </li>
+	      <li class="no_border">
+		<a href="/shopping_cart.html" class="view_cart">View shopping cart</a>
+		<a href="/checkout.html" class="checkout">Procced to Checkout</a>
+	      </li>
+            </ul>-->
+          </li>
+        </ul>
+     </div>
+
+
+ <div class="grid_6" style="width:auto;float:right;">
+ <nav class="private">
+          <ul>
+            <li><form method="POST" accept-charset="utf-8" id="siteheart_button_121106" action="https://siteheart.com/webconsultation/121106?byhref=1" target="siteheart_button_121106" >
+					<input type="hidden" name="_charset_">
+					<input type="hidden" name="data[your_name]" value="your_value"/>
+					<a href="https://siteheart.com/webconsultation/121106?byhref=1" target="siteheart_sitewindow_121106" onclick="_gaq.push(['_trackEvent', 'button', 'ask']);o=window.open;o('https://siteheart.com/webconsultation/121106', 'siteheart_sitewindow_121106', 'width=550,height=400,top=30,left=30,resizable=yes'); return false;">
+					    Онлайн-консультация</a>
+					</form></li>
+		<li class="separator">|</li>
+            <li><a style="cursor:pointer;" onclick="popupWin = window.open('/zvonok.php', 'contacts', 'location,width=400,height=300,top=0'); popupWin.focus();return false;">Обратный звонок</a></li>
+          </ul>
+        </nav><!-- .private -->
+      </div><!-- .grid_6 -->
+      
+<div class="grid_3" style="float:right;margin-top:-5px;">
+<div class="phone_top"  style="margin:0px;width:95px;float:left;">
+<span id="phoneMain"><span style="font-size:12px;">8-800-555-1092</span></span>
+</div><!-- .phone_top -->
+      
+<div class="phone_top" style="margin:0px;width:85px;float:left;">         
+<span id="phoneMainUa" class="change_phoneMain" style="display:inline-block;"><span style="font-size:12px;">0-800-50-75-85</span></span>
+</div><!-- .phone_top -->
+<form method="get" id="searchform" class="search" action="{$wa->getUrl('/frontend/search')}" style="float:left;width:100%;margin:0px;">
+<input class="text entry_form" type="search" name="query" {if !empty($query)}value="{$query}"{/if} id="search" placeholder="[`Find products`]" />
+<input type="submit" class="submit" name="Submit" value="Search Site" style="visibility:hidden;" />
+</form>       
+      </div>
+
+      
+
+      
+    </header><!-- #branding -->
+  </div><!-- .container_12 -->
+
+  <div class="clear"></div>
+
+  <div id="block_nav_primary">
+    <div class="container_12">
+      <div class="grid_12">
+        <nav class="primary">
+          <ul>{$wa_test}</ul>
+        </nav><!-- .primary -->
+      </div><!-- .grid_12 -->
+    </div><!-- .container_12 -->
+  </div><!-- .block_nav_primary -->
+
+  <div class="clear"></div>
+  <!-- navigation breadcrumbs -->
+ {if isset($breadcrumbs)}
+  <div class="container_12">
+    <div class="grid_12">
+       <div class="breadcrumbs">
+                    <a href="{$wa_app_url}">{$wa->accountName()}</a><span>&#8250;</span>
+                    {if $breadcrumbs}
+                        {foreach $breadcrumbs as $breadcrumb}
+                            <a href="{$breadcrumb.url}">{$breadcrumb.name}</a><span>&#8250;</span>
+                        {/foreach}
+                    {else} <span>&#8250;</span> {/if}
+                </div></div></div>
+            {/if}
+<section id="main">  
+  <div class="container_12">
+            {$content}
+  </div>
+  </section><!-- #main -->
+  
+  <div class="clear"></div>
+
+  <footer>
+    <div class="f_navigation">
+      <div class="container_12">
+        <div class="grid_3">
+          <div style="font-size:18px;margin-bottom:10px">График работы Call-центра</div>
+          
+           <div style="font-size:14px;">Пн-Пт: с 8:00 до 21:00</div>
+           <div style="font-size:14px;">Суббота: с 9:00 до 20:00</div>
+			<div style="font-size:14px;">Воскресенье: с 9:00 до 19:00</div>
+          <br />
+          <div style="font-size:18px;margin-bottom:10px">Контакты</div>
+          <div style="font-size:14px;">г. Киев, ТРЦ «Dream Town»</div>
+          <div style="font-size:14px;">(044) 288-55-77 — Киев</div>
+          <div style="font-size:14px;">(057) 388-44-88 — Харьков</div>
+          <div style="font-size:14px;"><a href="mailto:hello@fonarik.ua">hello@fonarik.ua</a></div>
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <div style="font-size:18px;margin-bottom:10px"><a href="#">Представительства</a></div>
+                  
+          <div style="font-size:14px;">г. Харьков, ул. Героев труда, 9</div>
+           <div style="font-size:14px;">ТРЦ Дафи, 2-ой этаж</div>
+			<div style="font-size:14px;">Время работы с 10:00 до 22:00</div>
+        </div><!-- .grid_3 -->
+
+
+        <div class="grid_3">
+          <h3>Контакты в Беларуси:</h3>
+          <ul class="f_contact">
+            <li><h1 style="font-size:14px;">(029) 694-99-01 - Минск</h1></li>
+          </ul><!-- .f_contact -->
+        </div><!-- .grid_3 -->
+
+
+        <div class="grid_3">
+          <div style="font-size:18px;margin-bottom:10px">Мы в социальных сетях</div>
+          
+        </div><!-- .grid_3 -->
+
+        <div class="clear"></div>
+      </div><!-- .container_12 -->
+      <div class="container_12"></div>
+    </div><!-- .f_navigation -->
+
+    <div class="f_info">
+      <div class="container_12">
+        <div class="grid_3">
+          <p class="copyright">Интернет-магазин Fonarik.ua &copy;2013 </p>
+        </div><!-- .grid_6 -->
+
+        <div class="grid_9">
+          <div class="soc">
+            <a class="google" href="#"></a>
+            <a class="twitter" href="#"></a>
+            <a class="facebook" href="#"></a>
+          </div><!-- .soc -->
+       
+
+<div class="counters" style="float:left;width:auto;">
+<div class="blocks" style="float:left;width:auto;">
+
+ <div id="poweredby">
+                <a title="[s`Powered by Webasyst`]" href="http://www.webasyst.com/" class="dots"></a>
+            </div>
+            <div id="copyright">
+                &copy; {time()|wa_datetime:"Y"} <a href="{$wa_url}">{$wa->accountName()}</a>
+
+               
+            </div>        
+{literal}
+
+
+<script type="text/javascript">
+(function (d, w, c) {
+(w[c] = w[c] || []).push(function() {
+try {
+w.yaCounter6066736 = new Ya.Metrika({id:6066736,
+webvisor:true,
+clickmap:true,
+trackLinks:true});
+} catch(e) { }
+});
+var n = d.getElementsByTagName("script")[0],
+s = d.createElement("script"),
+f = function () { n.parentNode.insertBefore(s, n); };
+s.type = "text/javascript";
+s.async = true;
+s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+if (w.opera == "[object Opera]") {
+d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+{/literal}
+<noscript><div style="float:left;width:auto;"><img src="//mc.yandex.ru/watch/6066736" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+					</div>
+					
+
+<div class="blocks" style="float:left;width:auto;margin-left:10px"> 
+							<a href="http://clck.yandex.ru/redir/dtype=stred/pid=47/cid=2508/*http://grade.market.yandex.ru/?id=54603&action=link"><img src="http://clck.yandex.ru/redir/dtype=stred/pid=47/cid=2505/*http://grade.market.yandex.ru/?id=54603&action=image&size=0" border="0" width="88" height="31" alt="Читайте отзывы покупателей и оценивайте качество магазина fonarik.com на Яндекс.Маркете" /></a>
+
+                    </div>
+					
+				</div>
+                
+                 </div>
+				
+		</div>
+ 
+</div>
+
+
+<!--<script type="text/javascript"><!--
+reformal_wdg_w    = "713";
+reformal_wdg_h    = "460";
+reformal_wdg_domain    = "fonarik";
+reformal_wdg_mode    = 0;
+reformal_wdg_title   = "Fonarik.com";
+reformal_wdg_ltitle  = "Оставить отзыв";
+reformal_wdg_lfont   = "Verdana, Geneva, sans-serif";
+reformal_wdg_lsize   = "12px";
+reformal_wdg_color   = "#355bbd";
+reformal_wdg_bcolor  = "#516683";
+reformal_wdg_tcolor  = "#FFFFFF";
+reformal_wdg_align   = "right";
+reformal_wdg_charset = "utf-8";
+reformal_wdg_waction = 0;
+reformal_wdg_vcolor  = "#9FCE54";
+reformal_wdg_cmline  = "#E0E0E0";
+reformal_wdg_glcolor  = "#105895";
+reformal_wdg_tbcolor  = "#FFFFFF";
+reformal_wdg_tcolor_aw4  = "#3F4543";
+ 
+reformal_wdg_bimage = "http://fonarik.com/wp-content/themes/fonarik/images/leave_feedback.png";
+
+</script>
+
+<script type="text/javascript" language="JavaScript" src="http://widget.reformal.ru/tabn2v4.js"></script><noscript><a href="">Fonarik.com feedback</a> <a href="">поддержка <img src="http://widget.reformal.ru/i/reformal_ru.png" /></a></noscript> -->
+
+  </footer>
+  {* @event frontend_footer.%plugin_id% *}
+  {foreach $frontend_footer as $_}{$_}{/foreach}

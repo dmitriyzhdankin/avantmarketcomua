@@ -1,0 +1,80 @@
+<!-- top products -->
+<div class="container_12" style="display:block;height:435px;overflow:hidden;">  
+{$promos = $wa->shop->productSet('promo')}
+{if $promos && count($promos)}
+<div class="carousel">
+        <div class="c_header">
+          <div class="grid_10">
+            <h2>Популярные продукты:</h2>
+          </div><!-- .grid_10 -->
+
+          <div class="grid_2">
+            <a id="next_c1" class="next arows" href="#"><span>Вперёд</span></a>
+            <a id="prev_c1" class="prev arows" href="#"><span>Назад</span></a>
+           </div><!-- .grid_2 -->
+        </div><!-- .c_header -->
+
+        <div class="list_carousel">
+
+        <ul id="list_product" class="list_product">
+        {foreach $promos as $p}
+        
+        <li class="">
+            <div class="grid_3 product">             
+              <div class="prev">
+                <a href="{$p.frontend_url}" title="{$p.name}{if $p.summary} &mdash; {strip_tags($p.summary)}{/if}">
+                 <img src="{$wa_theme_url}img/dummy200.png">
+                    <!--{$wa->shop->getImageBadgeHtml($p)}                    
+                    {$_img = $wa->shop->getProductImgHtml($p)}
+                    {if $_img}
+                        {$_img}
+                    {else}-->
+                    <img src="{$wa_theme_url}img/dummy200.png">
+                    <!--{/if}-->
+                    </a></div>
+              <h3 class="title">{$p.name}</h3>
+              <div class="cart">
+                <div class="price">
+                <div class="vert">
+                  <div class="price_new">{shop_currency($p.price, $p.currency)}</div>
+                  <div class="price_old"></div>
+                </div>
+                </div>
+                <a href="" class="bay"></a>
+              </div>
+            </div>
+          </li>  
+        {/foreach}
+    </ul><!-- #list_product -->
+  </div><!-- .list_carousel -->
+</div><!-- .carousel -->
+{else}
+
+<p class="hint align-center">{sprintf('[`Product set with the ID <strong>%s</strong> either does not exist or does not contain any product. Add some products into a product set with the specified ID to make these products featured here.`]','promo')}</p>
+{/if}
+</div>
+
+<div class="container_12">
+   <div id="sidebar" class="grid_3">
+
+    <!-- storefront navigation -->
+    <aside id="categories_nav">
+    <nav class="left_menu">
+    {include file="sidebar.html"}
+   </nav></aside>
+       </div><!-- .sidebar -->
+      
+       <div id="content" class="grid_9">
+
+    <!-- general homepage welcome text -->
+    <h1>[`Welcome to Shop-Script!`]</h1>
+    <p>[`Use built-in design editor to edit this text and replace it with your general store information and contacts.`]</p>
+
+    {$bestsellers = $wa->shop->productSet('bestsellers')}
+    {if $bestsellers}
+        {include file="list-table.html" products=$bestsellers}
+    {else}
+        <p class="hint align-center">{sprintf('[`Product set with the ID <strong>%s</strong> either does not exist or does not contain any product. Add some products into a product set with the specified ID to make these products featured here.`]','bestsellers')}</p>
+    {/if}
+    
+</div>

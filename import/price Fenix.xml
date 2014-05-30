@@ -1,0 +1,1131 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>oleg</Author>
+  <LastAuthor>oleg</LastAuthor>
+  <Revision>1</Revision>
+  <TotalTime>0</TotalTime>
+  <LastPrinted>2013-06-14T14:29:23Z</LastPrinted>
+  <Created>2013-06-14T14:29:23Z</Created>
+  <LastSaved>2013-06-14T14:29:23Z</LastSaved>
+  <Version>14.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+  <Colors>
+   <Color>
+    <Index>16</Index>
+    <RGB>#B4B4B4</RGB>
+   </Color>
+  </Colors>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>5895</WindowHeight>
+  <WindowWidth>11400</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <TabRatio>0</TabRatio>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s22">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+  </Style>
+  <Style ss:ID="s23">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Font ss:FontName="Courier New" x:CharSet="1" x:Family="Swiss" ss:Size="14"
+    ss:Bold="1"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s24">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s25">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+  </Style>
+  <Style ss:ID="s26">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s27">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8" ss:Bold="1"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s28">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8" ss:Bold="1"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s29">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s30">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s33">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="9" ss:Bold="1"
+    ss:Italic="1"/>
+   <Interior ss:Color="#B4B4B4" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s34">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="9"
+    ss:Italic="1"/>
+   <Interior ss:Color="#B4B4B4" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s35">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="9"
+    ss:Italic="1"/>
+   <Interior ss:Color="#B4B4B4" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s36">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="9"
+    ss:Italic="1"/>
+   <Interior ss:Color="#B4B4B4" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s37">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s38">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s39">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="0.00;[Red]\-0.00"/>
+  </Style>
+  <Style ss:ID="s40">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="8"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s41">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s42">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:CharSet="1" x:Family="Swiss" ss:Size="9" ss:Bold="1"/>
+   <NumberFormat/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="TDSheet">
+  <Table ss:ExpandedColumnCount="256" ss:ExpandedRowCount="92" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="42" ss:DefaultRowHeight="11.25">
+   <Column ss:StyleID="s22" ss:AutoFitWidth="0" ss:Width="5.25"/>
+   <Column ss:StyleID="s22" ss:AutoFitWidth="0" ss:Width="230.25"/>
+   <Column ss:StyleID="s22" ss:AutoFitWidth="0" ss:Width="65.25"/>
+   <Column ss:StyleID="s22" ss:AutoFitWidth="0" ss:Width="72" ss:Span="1"/>
+   <Column ss:Index="6" ss:StyleID="s22" ss:AutoFitWidth="0" ss:Width="65.25"
+    ss:Span="2"/>
+   <Column ss:Index="9" ss:AutoFitWidth="0" ss:Width="48" ss:Span="247"/>
+   <Row ss:AutoFitHeight="0" ss:Height="19.3125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">Авантмаркет</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="32.8125">
+    <Cell ss:StyleID="s25"/>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">www.avantmarket.com.ua &#10;info@avantmarket.com.ua&#10;044 232 81 07, 057 760 13 69</Data></Cell>
+    <Cell ss:StyleID="s28"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="9.5625" ss:StyleID="s29">
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125" ss:StyleID="s29">
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">В валютах цен.</Data></Cell>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125" ss:StyleID="s29">
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">Цены указаны на 14.06.2013</Data></Cell>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125" ss:StyleID="s29">
+    <Cell ss:StyleID="s30"/>
+    <Cell ss:StyleID="s24"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+    <Cell ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="8.25" ss:Hidden="1" ss:StyleID="s22"/>
+   <Row ss:AutoFitHeight="0" ss:Height="23.0625" ss:StyleID="s22">
+    <Cell ss:Index="2" ss:MergeDown="1" ss:StyleID="s41"><Data ss:Type="String">Номенклатура</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s42"><Data ss:Type="String">Номенклатура.Артикул </Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s42"><Data ss:Type="String">..ОПТ мелкий (F, G, G, M - 25, P - 15, S - 50, D - 40)</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s42"><Data ss:Type="String">.ЦЕНА продажи(розн)</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s42"><Data ss:Type="String">Склад №1(офис)</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="s42"><Data ss:Type="String">Склад Киев </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="22.6875" ss:StyleID="s22"/>
+   <Row ss:AutoFitHeight="0" ss:Height="12.5625">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">01 Фонари Fenix</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s35"/>
+    <Cell ss:StyleID="s35"/>
+    <Cell ss:StyleID="s36"/>
+    <Cell ss:StyleID="s36"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix BT10 R5 (380 лм, 4хАА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">BT10R5</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">87.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">109</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">71</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix BT20 T6 (750 лм, 2х18650)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">BT20T6</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">108</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">135</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix E01 желтый (10 лм, 1хААА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">E01y</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix E01 розовый (10 лм, 1хААА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">E01p</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix E01 серый (10 лм, 1хААА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">E01g</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix E01 синий (10 лм, 1хААА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">E01bl</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix E01 черный (10 лм, 1хААА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">E01b</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix E05 R2 синий (27 лм, 1хААА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">E05R2bl</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">38</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix E05 R2 фиолет (27 лм, 1хААА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">E05R2p</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix E05 R2 черный (27 лм, 1хААА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">E05R2b</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix E11 серый (105 лм, 1хAA)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">E11g</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">31.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">39</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix E11 черный (105 лм, 1хAA)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">E11b</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">31.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">39</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix E15 R2 (170 лм, 1хCR123)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">E15R2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">34.4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">43</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix E21 R2 (170 лм, 2хAA)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">E21R2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">40</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix E25 (187 лм, 2хAA)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">E25</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">44</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">55</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">44</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix E35 (225 лм, 1x18650 2хCR123)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">E35</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">47.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">59</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix E40 R4 (220 лм, 4хAA)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">E40R4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">52</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">65</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix E50 T6 (780 лм, 2х18650 )</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">E50T6</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">86.4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">108</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix HL10 (70 лм, 1хAAA)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">HL10</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">33.6</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">42</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix HL21 R2 желт (97 лм, 1хAA)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">HL21R2y</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">39.200000000000003</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">49</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">102</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix HL21 R2 черн (97 лм, 1хAA)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">HL21R2b</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">39.200000000000003</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">49</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">77</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix HL30 R5 серо-зеленый (200 лм, 2хАА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">HL30R5g</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">52</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">65</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">70</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix HL30 R5 черно-желтый (200 лм, 2хАА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">HL30R5y</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">52</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">65</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">103</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix HP11 R5 желтый (277 лм, 4хАА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">HP11R5y</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">71.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">89</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix HP11 R5 черный (277 лм, 4хАА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">HP11R5b</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">71.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">89</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix LD01 R4 (72 лм, 1хААА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">LD01R4      </Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">43.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">54</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix LD12 S2 (120 лм, 1хАА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">LD12S2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">60</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">75</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix LD15 R4 (117 лм, 1хАА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">LD15R4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">44</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">55</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix LD22 R5 (190 лм, 2хАА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">LD22R5</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">65.599999999999994</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">82</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix LD22 S2 (190 лм, 2хАА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">LD22S2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">68</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">85</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">60</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix LD25 R4 (180 лм, 2хАА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">LD25R4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">55.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">69</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix LD41 U2 (520 лм, 4хАА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">LD41U2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">84</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">105</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix MC11 R2 (81 лм, 1хАА)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">MC11R2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">48</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">60</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix PD22 G2 (190 лм, 1хCR123)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">PD22XPG2R5</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">62.4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">78</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">29</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix PD22 R5 (190 лм, 1хCR123)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">PD22R5</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">60</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">75</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix PD32 R5 (315 лм, 1х18650, 2xCR123)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">PD32R5</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">80</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix PD32 S2 (330 лм, 1х18650, 2xCR123)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">PD32S2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">79.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">99</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">38</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix PD32 T6 (740 лм, 1х18650, 2xCR123)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">PD32T6</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">87.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">109</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix RC10 R5 (380 лм, АКБ и зарядка в комплекте)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">RC10R5</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">143.19999999999999</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">179</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix RC15 U2 (860 лм АКБ и зарядка в комплекте)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">RC15U2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">159.19999999999999</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">199</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix RC40 U2 (3500 лм, АКБ и зарядка в комплекте)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">RC40U2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">399.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">499</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="22.3125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix TA20 Premium Q5 1х18650, 2хCR123  (225 лм, 1х18650, 2хCR123)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">TA20Q5n</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">88.8</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">111</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix TK11 R5 (257 лм, 1х18650, 2xCR123)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">TK11R5</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">76</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">95</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix TK15 S2 (400 лм, 1х18650, 2xCR123)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">TK15S2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">88</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">57</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix TK22 U2 (650 лм, 1х18650, 2xCR123)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">TK22U2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">104</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">55</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">41</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix TK35 U2 (860 лм, 2х18650, 4xCR123)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">TK35U2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">65</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix TK40 CREE MC-E (630 лм, 8хAA)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">TK40        </Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">112</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix TK41 U2 (860 лм, 8хAA)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">TK41U2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">143.19999999999999</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">179</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix TK45 R5 (760 лм, 8хAA)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">TK45R5</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">143.19999999999999</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">179</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix TK50 R5 (255 лм, 2хD)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">TK50R5</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">88</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">110</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix TK60 R5 (800 лм, 3-4хD)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">TK60R5</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">136</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">170</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix TK70 (2200 лм, 3-4хD только аккумуляторы)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">TK70</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">239.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">299</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Fenix TK75 U2 (2600 лм, 4х18650)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">TK75U2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">208</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">260</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12.5625">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s33"><Data ss:Type="String">02 Аксессуары Fenix</Data></Cell>
+    <Cell ss:StyleID="s34"/>
+    <Cell ss:StyleID="s35"/>
+    <Cell ss:StyleID="s35"/>
+    <Cell ss:StyleID="s36"/>
+    <Cell ss:StyleID="s36"/>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Велосипедное крепление Fenix AF02</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AF02</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">152</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Выносная тактич. кн. для Fenix AR102</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AR102</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">97</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">51</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Диффузионная линза Fenix</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AD401</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">2.4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Диффузионная линза Fenix HP20</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AD03</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">3.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Диффузионный фильтр  Fenix AOD-S</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AOD-S</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">87</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Диффузионный фильтр Fenix AOD-M</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AOD-M</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">48</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Диффузионный фильтр PD31/32 белый Fenix AOD-SOW</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AOD-SOW</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">3.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">41</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Диффузионный фильтр PD31/32 красный Fenix AOD-SOR</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AOD-SOR</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">3.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Диффузионный фильтр TK белый Fenix AD102-W</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AD102-W</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Диффузионный фильтр TK красный Fenix AD102-R</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AD102-R</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Диффузионный фильтр TK41/TK60 белый Fenix AOD-L</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AOD-L</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Диффузионный фильтр белый Fenix AD101-W</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AD101-W</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">3.2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">66</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Диффузионный фильтр красный Fenix AD101-R</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AD101-R</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Клипса на ремень Fenix AB02</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AB02</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Крепление на оружие на планку Пикатинни Fenix ALG-01</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">ALG-01</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">10.4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s40"/>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Крепление наголовное для фонарей Fenix</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">HeadFen</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Рассеиватель для палатки Fenix</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">CampL</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">6.8</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">8.5</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">52</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Рассеиватель для палатки Fenix TK AD502-N</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AD502-N</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">6.8</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">8.5</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">57</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Свисток Lifesaving Whistle NW20 (130 дБ)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">NW20</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Свисток Lifesaving Whistle NW30 (130 дБ)</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">NW30</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Сигнальный жезл Fenix AD201</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AD201</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Сигнальный жезл TK Fenix AD202</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AD202</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Удлинитель для TK75 с батарейным отсеком </Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AER-TK75</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Фильтр зеленый TK Fenix AD302-G</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AD302-G</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">6.4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">45</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Фильтр красный Fenix LD/PD AD301</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AD301</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Фильтр красный TK Fenix AD302-R</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AD302-R</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">6.4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">65</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="11.8125">
+    <Cell ss:StyleID="Default"/>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">    Фильтр синий TK Fenix AD302-B</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">AD302-B</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">6.4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s39"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <NoSummaryRowsBelowDetail/>
+   <NoSummaryColumnsRightDetail/>
+   <DisplayPageBreak/>
+   <Selected/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

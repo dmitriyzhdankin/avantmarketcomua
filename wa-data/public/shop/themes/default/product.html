@@ -1,0 +1,255 @@
+<script type="text/javascript" src="{$wa_url}wa-content/js/jquery-plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="{$wa_theme_url}product.js"></script>
+
+<h1 itemprop="name">{$product.name}</h1>
+
+<!-- product page navigation -->
+<ul class="menu-h">
+    <li class="selected"><a href="{$wa->getUrl('/frontend/product', ['product_url' => $product.url])}">[`Overview`]</a></li>
+    <li><a href="{$wa->getUrl('/frontend/productReviews', ['product_url' => $product.url])}">[`Reviews`]</a> <span class="hint" itemprop="reviewCount">{count($product.reviews)}</span></li>
+    {foreach $product.pages as $page}
+        <li><a href="{$wa->getUrl('/frontend/productPage', ['product_url' => $product.url,'page_url' => $page.url])}">{$page.name}</a></li>
+    {/foreach}
+
+</ul>
+
+<br clear="left">
+
+<!-- SIDEBAR -->
+<div class="sidebar right300px">
+
+    <div class="cart">
+        <!-- add to cart -->
+        <form method="post" action="{$wa->getUrl('/frontendCart/add')}">
+            
+            <!-- sku -->
+            {if count($product.skus) > 1}
+                {* display sku selector *}
+                <ul class="skus" id="product-skus">
+                    {$product_available = false}
+                    {foreach $product.skus as $sku}
+                        {$sku_available = ($sku.available && $sku.count !== 0)}
+                        <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            <label{if !$sku_available} class="disabled"{/if}>
+                                <input name="sku_id" type="radio" value="{$sku.id}"{if !$sku_available} disabled="true"{/if}{if $sku.id == $product.sku_id} checked="checked"{/if} data-price="{shop_currency($sku.price, $product.currency)}"{if $sku.image_id} data-image-id="{$sku.image_id}"{/if}> {$sku.name}
+                                <meta itemprop="price" content="{$sku.price}">
+                                {if $sku.count === 0}
+                                    <em class="nowrap small out-of-stock">[`Out of stock`]</em>
+                                    <link itemprop="availability" href="http://schema.org/OutOfStock" />
+                                {else}
+                                    <link itemprop="availability" href="http://schema.org/InStock" />
+                                {/if}
+                            </label>
+                        </li>
+                        {$product_available = $product_available or $sku_available}
+                    {/foreach}
+                </ul>
+                <script>
+                    $(function () {
+                        var sku_services = {json_encode($sku_services)};
+                        var service_variant_html = function (id, name, price) {
+                            return '<option id="service-variant-' + id + '" value="' + id + '">' + name + ' (+' + price + ')</option>';
+                        }
+                        $("#product-skus input:radio").click(function () {
+                            var sku_id = $(this).val();
+                            for (var service_id in sku_services[sku_id]) {
+                                var v = sku_services[sku_id][service_id];
+                                if (v === false) {
+                                    $("#service-" + service_id).hide().find('input,select').attr('disabled', 'disabled');
+                                } else {
+                                    $("#service-" + service_id).show().find('input,select').removeAttr('disabled');
+                                    if (typeof (v) == 'string') {
+                                        $("#service-" + service_id + ' .service-price').html(v);
+                                    } else {
+                                        var selected_variant_id = 0;
+                                        for (var variant_id in v) {
+                                            var obj = $("#service-variant-" + variant_id);
+                                            if (v[variant_id] === false) {
+                                                obj.hide();
+                                            } else {
+                                                if (!selected_variant_id) {
+                                                    selected_variant_id = variant_id;
+                                                }
+                                                obj.replaceWith(service_variant_html(variant_id, v[variant_id][0], v[variant_id][1]));
+                                            }
+                                        }
+                                        $("#service-" + service_id + ' .service-variants').val(selected_variant_id);
+                                    }
+                                }
+                            }
+                        });
+                        $("#product-skus input:radio:checked").click();
+
+                    });
+                </script>
+            {else}
+                {* in case there is only one sku, don't display the selector *}
+                {$sku = $product.skus[$product.sku_id]}
+                {$product_available = ($sku.available and $sku.count !== 0)}
+                {if !$product_available}
+                     <link itemprop="availability" href="http://schema.org/OutOfStock" />
+                     <p><em class="bold out-of-stock nowrap">[`Out of stock`]</em></p>
+                {else}
+                     <link itemprop="availability" href="http://schema.org/InStock" />
+                     <input name="sku_id" type="hidden" value="{$product.sku_id}">
+                {/if}
+
+
+            {/if}
+
+            {if $services}
+            <!-- services -->
+            <div class="services">
+                {foreach $services as $s}
+                <div id="service-{$s.id}">
+                    <label>
+                        <input {if !$product_available}disabled="disabled"{/if} type="checkbox" name="services[]" value="{$s.id}"> {$s.name} {if $s.price && !isset($s.variants)}(+<span class="service-price">{shop_currency($s.price, $s.currency)}</span>){/if}
+                    </label>
+                    {if isset($s.variants)}
+                    <select class="service-variants" name="service_variant[{$s.id}]" disabled>
+                        {foreach $s.variants as $v}
+                        <option id="service-variant-{$v.id}" value="{$v.id}">{$v.name} (+{shop_currency($v.price, $s.currency)})</option>
+                        {/foreach}
+                    </select>
+                    {/if}
+                </div>
+                {/foreach}
+            </div>
+            {/if}
+               
+            <!-- price -->
+            <div class="add2cart">
+                <span class="price">{shop_currency($product.price, $product.currency)}</span>
+                <input type="hidden" name="quantity" value="1">
+                <input type="submit" {if !$product_available}disabled="disabled"{/if} value="[`Add to cart`]">
+            </div>
+               
+        </form>
+    
+        <!-- compare -->
+        <div>
+            <a {if $compare}style="display:none"{/if} class="compare-add inline-link" data-product="{$product.id}" href="#"><b><i>[`Add to comparison table`]</i></b></a>
+            <a {if !$compare}style="display:none"{/if} class="compare-remove inline-link" data-product="{$product.id}" href="#"><b><i>[`Remove from comparison table`]</i></b></a>
+            <a id="compare-link" {if count($compare) lt 2}style="display:none"{/if} href="{$wa->getUrl('/frontend/compare/', ['id' => implode(',', $compare) ])}" class="bold">[`Compare`] <span class="count">{count($compare)}</span></a>
+        </div>
+        
+    </div>
+
+    <div class="aux">
+
+        <!-- categories -->
+        {if $product.categories}
+            <p id="product-categories">
+            [`Categories`]:
+                {foreach $product.categories as $c}
+                <br>
+                <span class="product-info"><a href="{$wa->getUrl('/frontend/category', ['category_url' => $c.full_url])}">{$c.name}</a></span>
+                {/foreach}
+            </p>
+        {/if}
+
+        <!-- tags -->
+        {if $product.tags}
+            <p class="tags" id="product-tags">
+                [`Tags`]:
+                <span class="product-info">
+                {foreach $product.tags as $t}
+                    <a href="#">{$t}</a>
+                {/foreach}
+                </span>
+            </p>
+        {/if}
+        
+        <!-- product features -->
+        {if $product.features}
+            <table class="features" id="product-features" itemprop="description">
+                {foreach $product.features as $f_code => $f_value}
+                    <tr>
+                        <td class="name">
+                            {$features[$f_code].name}
+                        </td>
+                        <td class="value">
+                            {if is_array($f_value)}
+                            {implode(', ', $f_value)}
+                            {else}
+                            {$f_value}
+                            {/if}
+                        </td>
+                    </tr>
+                {/foreach}
+            </table>
+        {/if}
+
+    
+
+    
+    </div>
+    
+    <!-- hook: $frontend_product_nav_link-->
+
+</div>
+
+<!-- PRODUCT INFO -->
+<div class="content right300px">
+
+    <div class="product-page" id="overview">
+    
+        <!-- image gallery -->
+        <div class="align-center">
+            <!-- main image -->
+            <div class="image">
+                {if $product.images}
+                <div class="corner top right">
+                    {$wa->shop->getImageBadgeHtml($product.images[$product.image_id])}
+                </div>
+                {/if}
+                {$wa->shop->getProductImgHtml($product, '750x0', ['itemprop' => 'image', 'id' => 'product-image', 'title' => $product.name|escape|cat:' ':strip_tags($product.summary)|escape])}
+            </div>
+            <!-- gallery -->
+            {if count($product.images) > 1}
+                <div class="gallery" id="product-gallery">
+                    {foreach $product.images as $image}
+                        <div class="image">                    
+                            <a id="product-image-{$image.id}" href="#">
+                                <div class="corner top right">
+                                    {$wa->shop->getImageBadgeHtml($product.images[$image.id])}
+                                </div>
+                                {$wa->shop->getProductImgHtml(['id'=> $product.id, 'image_id' => $image.id, 'ext' => $image.ext], '96x96', ['itemprop' => 'image'])}</a>
+                        </div>
+                    {/foreach}
+                </div>
+            {/if}
+        </div>
+
+        {if $product.description}
+            <div class="description" id="product-description" itemprop="description">{$product.description}</div>
+        {/if}
+
+        <!-- product reviews -->
+        <div class="reviews">
+            <h3>{sprintf('[`%s reviews`]', $product.name)}</h3>
+            <ul class="menu-v with-icons">
+                {foreach $reviews as $review}
+                    <li data-id={$review.id} data-parent-id="0">
+                        {include file="review.html" reply_allowed=false inline}
+                    </li>
+                {/foreach}
+            </ul>
+        </div>
+        
+        {if !$reviews}
+            <p>{sprintf('[`Be the first to <a href="%s">write a review</a> of this product!`]', 'reviews/')}</p>
+        {else}
+            {sprintf('[`Read <a href="%s">all %d reviews</a> on %s`]', 'reviews/', $reviews_total_count, $product.name)}
+        {/if}
+    </div>
+
+
+    <!-- product info subpages -->
+    {foreach $product.subpages as $p}
+        <div class="product-page" id="subpage-{$p.id}">
+            {$p.body}
+        </div>
+    {/foreach}
+
+</div>

@@ -1,0 +1,111 @@
+<div id="sidebar" class="grid_3">
+    {include file="sidebar.html"}  
+</div>
+
+<!-- general welcome text -->
+  <div id="content" class="grid_9"> 
+      
+    <h1 class="page_title">{$category.name}</h1>      
+    
+    <!-- description -->
+    {if $category.description}
+        <p>{$category.description}</p>
+    {/if}
+
+    <!-- subcategories -->
+   <!-- {if $category.subcategories}
+        <div class="sub-categories">
+            {foreach $category.subcategories as $sc}
+                <a href="{$sc.url}">{$sc.name|escape}</a><br />
+            {/foreach}
+        </div>
+    {/if}-->
+    
+<form action="" method="POST" name="tableView">
+<input type="hidden" name="view" value="table" />
+</form>
+<form action="" name="gridView" method="POST">
+<input type="hidden" name="view" value="grid" /> 
+</form>             
+                  
+<div class="options">
+		     <div class="grid-list">
+			   <a class="grid {if waRequest::post(view) eq 'grid'}current{/if}" onclick="document.forms['gridView'].submit();" {if waRequest::post(view) neq 'grid'}style="cursor:pointer"{/if}><span>img</span></a>
+               <a class="list {if waRequest::post(view) eq 'table'}current{/if}" onclick="document.forms['tableView'].submit();" {if waRequest::post(view) neq 'table'}style="cursor:pointer"{/if}><span>img</span></a>
+		     </div><!-- .grid-list -->
+		     
+		     <!--<div class="show">
+			    Показать
+			    <select>
+				   <option>1</option>
+				   <option>2</option>
+				   <option>3</option>
+				   <option>4</option>
+				   <option>5</option>
+				   <option>6</option>
+				   <option>7</option>
+				   <option>8</option>
+				   <option>9</option>
+				   <option>10</option>
+				   <option>11</option>
+				   <option>12</option>
+			     </select>
+			    
+			    на страницу
+		     </div> -->
+    	<div class="sort">
+         {$sort_fields = ['rating' => '[`Customer rating`]', 'total_sales' => '[`Bestsellers`]', 'price' => '[`Price`]', 'name' => '[`Name`]', 'create_datetime'=>'[`Date added`]', 'stock' => '[`In stock`]']}
+    {if !isset($active_sort)}
+    {$active_sort = $wa->get('sort', 'create_datetime')}
+    {/if}
+			 Сортировать:
+			    <select style="width:170px;" id="sorting"  class="select">
+        {if !empty($category) && !$category.sort_products}
+            <option {if !$active_sort} selcted="selected"{/if} value="{$wa->currentUrl(0, 1)}">[`New & Popular`]</option>
+        {/if}
+        {foreach $sort_fields as $sort => $name}
+        <option {if $active_sort == $sort} selected="selected"{/if} value="{$sort}">{$name}</option>
+        {if $wa->get('sort') == $sort}{$wa->title( $wa->title()|cat:' — '|cat:$name)}{/if}
+        {/foreach}
+			     </select>
+                <script>
+                    $("#sorting").change(function () {
+                        var url = location.href;
+                        if (url.indexOf('?') == -1) {
+                            url += '?';
+                        } else {
+                            url += '&';
+                        }
+                        location.href = url + 'sort=' + $(this).val() + '&order=asc';
+                    });
+                </script>
+		     </div><!-- .sort -->
+	      </div><!-- .options -->
+
+   
+    {if !$products}
+        [`No products matched your filtering criteria.`]
+    {else if waRequest::post(view) eq 'table'}
+    <div class="listing_product">
+       {include file='list-table.html' sorting=!empty($category.params.enable_sorting)}
+    	      <div class="clear"></div>
+	      </div>
+    {else}
+    <div class="grid_product">
+       {include file='list-thumbs.html' sorting=!empty($category.params.enable_sorting)} 
+        <div class="clear"></div>
+	</div> 
+    {/if}
+
+ <div class="clear"></div>
+	   {if isset($pages_count) && $pages_count > 1}    
+	      <div class="pagination">
+		      {wa_pagination total=$pages_count}
+	      </div><!-- .pagination -->
+	      <p class="pagination_info"></p>
+  {/if}
+    
+       </div><!-- #content -->
+       
+      <div class="clear"></div>
+</div>

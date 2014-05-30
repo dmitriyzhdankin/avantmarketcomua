@@ -1,0 +1,17 @@
+206e4761defebc9c888a9e8473ee95d6 *img/dummy.png
+5d47c40c25ed08e3cf0d987c049fc8d7 *js/dummy.js
+cbff1b2c3d262f100b1b85616f8f22fb *lib/actions/backend/dummyBackend.action.php
+b009e79e4eaaf3af87fe5c0dbbdc46f3 *lib/actions/backend/dummyBackendRecord.controller.php
+08665af4c3004929b38f147f692e7e43 *lib/actions/backend/dummyBackendRecords.action.php
+9624cf7221ba6517f5442d2bd5d99110 *lib/actions/frontend/dummyFrontend.action.php
+4f98370614601bfa22f11c1ab714212f *lib/config/app.php
+f3dd8b77c2f6804dc5fe2146fae88bc0 *lib/config/build.php
+4289be59b0fd02ba32a1b7982f86f84d *lib/config/dummyConfig.class.php
+5589094c219578a4df0e3cc245823130 *lib/config/dummyRightConfig.class.php
+8ee519cdb0e71ac44f6746a395f463f8 *lib/config/records.php
+8cda18588644465336b34cf0e0539537 *locale/en_US/LC_MESSAGES/dummy.po
+463e3547bcc5bd14721d9c4448bc04f0 *locale/ru_RU/LC_MESSAGES/dummy.mo
+eda676b8c52128b0f31440e998dd0f44 *locale/ru_RU/LC_MESSAGES/dummy.po
+6a981b0e6ffbb949500d8988873d1101 *templates/actions/backend/Backend.html
+396ea0134299bcd6f1964bbac9cf390e *templates/actions/backend/BackendRecords.html
+d8617561226eaf34046c11996b439fdd *templates/actions/frontend/Frontend.html

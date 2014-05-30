@@ -1,0 +1,33 @@
+    
+    <table class="table">
+    {foreach $products as $p}
+        <tr>
+            <td class="min-width">
+                <a href="{$p.frontend_url}" title="{$p.name|escape}{if $p.summary} &mdash; {strip_tags($p.summary)}{/if}">
+                    {$wa->shop->getProductImgHtml($p, '48x48', ['itemprop' => 'image'])}                    
+                </a>
+            </td>
+            <td>
+                <h5 itemprop="name"><a href="{$p.frontend_url}" title="{$p.name|escape}{if $p.summary} &mdash; {strip_tags($p.summary)}{/if}">{$p.name}</a></h5>
+                {if $p.summary}<p itemprop="description">{$p.summary}</p>{/if}
+            </td>
+            <td>
+                <span class="price nowrap">{shop_currency($p.price, $p.currency)}</span>
+            </td>
+            {*
+            <td>
+                <i class="icon16 cart"></i>
+                <input type="text" name="quantity" class="numerical" value="1">
+                <a href="#">[`Add to cart`]</a>
+            </td>
+            *}
+        </tr>
+    {/foreach}
+    </table>
+
+    {if isset($pages_count) && $pages_count > 1}
+    <div class="block lazyloading-paging">
+        {wa_pagination total=$pages_count attrs=['class' => "menu-h"]}
+    </div>
+    {/if}
+    

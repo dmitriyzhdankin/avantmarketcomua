@@ -1,0 +1,35 @@
+   <table class="product_opt tab_body">
+   <tr>
+   <th class="image" style="width:50px;padding:0px;"></th>
+   <th class="bg name" style="width:170px;">Название товара</th>
+   <th>Артикул товара</th> 
+   <th class="bg name" style="width:110px;">Наличие</th>
+   <th  style="width:80px;">Розничная цена</td>
+   {if $wa->user()->getName()}<th class="bg name" style="width:80px;">Ваша цена</th>{/if}
+   <th style="width:91px;">Заказать</th>
+   </tr>
+    {foreach $products as $p}
+     {$bImage =  $wa->shop->getProductImgHtml($p, '300x0', ['itemprop' => 'image', 'default' => "`$wa_theme_url`img/dummy96.png"])|regex_replace:'/^.+src="([^"]+)".*$/':'\1'}
+     {$sCount = $bImage|count_characters}                    
+     {$bImage =  $bImage|substr:1:$sCount}
+   <tr itemscope itemtype ="http://schema.org/Product">
+   <td class="image" style="width:50px;padding:0px;"><a href="{$p.frontend_url}" class="opt_table_link" title="{$p.name|escape}{if $p.summary} &mdash; {strip_tags($p.summary)}{/if}"
+  style="display:block;width:50px;height:50px;overflow:hidden;background-image:url({$wa->url(true)}{$bImage});background-size:contain;background-position:center;background-repeat:no-repeat;" ></a></td>
+   <td class="bg"><a href="{$p.frontend_url}" title="{$p.name|escape}{if $p.summary} &mdash; {strip_tags($p.summary)}{/if}">{$p.name}</a></td>
+   <td>{$p.sku.sku}</td> 
+   <td class="bg" style="width:110px;">{if $p.stock}{foreach $p.stock item=instock}{$instock.name}:
+   {if $instock.count lt 1} нет
+   {elseif $instock.count ge 1 and $instock.count lte $instock.critical_count} мало
+   {elseif $instock.count gt $instock.critical_count and $instock.count lte $instock.low_count} средне
+   {elseif $instock.count gt $instock.low_count} много{/if}<br/>{/foreach}{/if}</td>
+   <td>{shop_currency($p.price)}</td>
+   {if $wa->user()->getName()}<td class="bg">{shop_currency($p.sku.purchase_price)}</td>{/if}
+   <td style="width:115px;"> <form class="addtocart" method="post" action="{$wa->getUrl('/frontendCart/add')}">
+                          <input type="hidden" name="product_id" value="{$p.id}">
+                          <input type="text" name="quantity" class="number" value="1" style="width:25px;text-align:center;float:left;display:block;float:left;padding:0px;"> 
+                          <input type="submit" {if $p.price eq 0}disabled="disabled" style="background:#CCC;"{/if} value="Заказать" style="width:81px;float:left;">
+    </form></td>
+   </tr>
+  
+    {/foreach}
+</table>

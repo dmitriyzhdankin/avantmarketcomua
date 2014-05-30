@@ -1,0 +1,35 @@
+<div id="sidebar" class="grid_3">
+<aside>
+<nav class="left_menu">
+<ul class="menu-h">
+    <li><a href="{$wa->getUrl('/frontend/myOrders')}"><strong>[`My orders`]</strong></a></li>
+    <li class="current"><a href=""><strong>[`My profile`]</strong></a></li>
+    {if shopAffiliate::isEnabled()}
+    <a href="{$wa->getUrl('/frontend/myAffiliate')}"><strong>[`Affiliate program`]</strong></a>
+    {/if}
+    <li><a href="/?logout"><strong>Выйти</strong></a></li>
+</ul>
+</nav>
+</aside>
+</div><!-- .sidebar -->
+
+<div id="content" class="grid_9">
+<h1>[`My profile`]</h1>
+
+{if $saved}
+    <strong><i class="icon16 saved"></i><span style="color:green">[`Contact information successfully updated!`]</span></strong>
+{/if}
+
+<form action="" method="post">
+<div class="wa-form">
+
+    {$form->html()}
+
+    <div class="wa-field">
+        <div class="wa-value">
+            <input type="submit" value="[`Save`]">
+        </div>
+    </div>
+</div>
+</form>
+</div>

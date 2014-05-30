@@ -1,0 +1,20 @@
+<div id="sidebar" class="grid_3">
+<aside>
+<nav class="left_menu">
+<ul class="menu-h">
+    <li class="current"><a>Вход</a></li>
+     <li><a href="/forgotpassword/">Забыли пароль?</a></li>
+    
+</ul>
+</nav>
+</aside>
+</div><!-- .sidebar -->
+
+<div id="content" class="grid_9">
+    <div id="page" role="main">
+        <h1>[`Login`]</h1>
+        {$wa->authAdapters()}
+        {$wa->loginForm($error)}
+    </div>
+    <p>Для регистрации обратитесь к Вашему менеджеру</p>
+</div>

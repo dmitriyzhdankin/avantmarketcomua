@@ -1,0 +1,41 @@
+<div id="sidebar" class="grid_3">
+    {include file="sidebar.html"}
+</div>
+
+<div id="content" class="grid_9">
+    <h1>{$page.title}</h1>
+    {if $page.acess and $page.acess eq 'user'}
+    {if $wa->user()->getName()} 
+    <div id="page" role="main">
+        {$page.content}
+        {if $page.csv and $page.csv eq 'true'}
+       
+        <h2 style="margin:15px 0px 5px 0px;padding-bottom:0px;">CSV Файлы:</h2>
+        {foreach $csvFiles item=csvFile}
+        <a href="{$csvFile.path}{$csvFile.name}">{$csvFile.name}</a> создано: {$csvFile.time}, размер: {$csvFile.size} Kb<br/>
+        {/foreach}
+        
+        
+        <h2 style="margin:15px 0px 5px 0px;padding-bottom:0px;">XML Файлы:</h2>
+        {foreach $xmlFiles item=xmlFile}
+        <a href="{$xmlFile.path}{$xmlFile.name}">{$xmlFile.name}</a> создано: {$xmlFile.time}, размер: {$xmlFile.size} Kb<br/>
+        {/foreach}
+       
+       
+        <h2 style="margin:15px 0px 5px 0px;padding-bottom:0px;">Excel Файлы:</h2>
+        {foreach $xlsFiles item=xlsFile}
+        <a href="{$xlsFile.path}{$xlsFile.name}">{$xlsFile.name}</a> создано: {$xlsFile.time}, размер: {$xlsFile.size} Kb<br/>
+        {/foreach}
+       
+        {/if}
+    </div>
+    {else}
+    <p>Инфмормация доступна только зарегистрированным пользователям</p>
+    <p>Чтобы получить доступ обратитесь к Вашему менеджеру</p>
+    {/if}
+    {else}
+    <div id="page" role="main">
+        {$page.content}
+    </div>
+    {/if}
+</div>

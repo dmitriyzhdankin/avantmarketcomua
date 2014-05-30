@@ -1,0 +1,252 @@
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6681162-8']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+    <!-- shop app css -->
+  <link rel="shortcut icon" href="{$wa_active_theme_url}images/favicon.png">
+  <link rel="stylesheet" href="{$wa_active_theme_url}style.css" type="text/css" media="screen" />
+  <link href="{$wa_active_theme_url}css/grid.css" media="screen" rel="stylesheet" type="text/css">
+  
+
+    <!-- js -->
+    <script type="text/javascript" src="{$wa_url}wa-content/js/jquery-wa/wa.core.js"></script>
+    {$wa->js()}    
+
+
+  <script src="{$wa_active_theme_url}js/html5.js" ></script>
+  <script src="{$wa_active_theme_url}js/jflow.plus.js" ></script>
+  <script src="{$wa_active_theme_url}js/jquery.carouFredSel-5.2.2-packed.js"></script>
+  <script src="{$wa_active_theme_url}js/checkbox.js"></script>
+  <script src="{$wa_active_theme_url}js/radio.js"></script>
+  <script src="{$wa_active_theme_url}js/selectBox.js"></script>
+  
+  <script type="text/javascript" src="{$wa_active_theme_url}custom.shop.js"></script>
+        
+
+<!--<script type="text/javascript" >        
+      function updatePage() {
+        
+        if (xmlHttp.readyState == 4) {
+        var response = xmlHttp.responseText;
+	if(response) {
+            jQuery('.delete-number').hide();
+            jQuery('.change_phoneMain').html('<span style="font-size:15px;">' + response + '</span>');
+	    jQuery('.free_show').show();
+            jQuery('.footer_phone').html(response);
+        }
+        }
+      }  
+        				
+        /* Создание нового объекта XMLHttpRequest для общения с Web-сервером */
+        var xmlHttp = false;
+        /*@cc_on @*/
+        /*@if (@_jscript_version >= 5)
+        try {
+          xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+        } catch (e) {
+          try {
+            xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+          } catch (e2) {
+            xmlHttp = false;
+          }
+        }
+        @end @*/
+        
+        if (!xmlHttp && typeof XMLHttpRequest != 'undefined') {
+          xmlHttp = new XMLHttpRequest();
+        }
+        
+jQuery(document).ready(function(){
+        // Создать URL для подключения
+        var url = "/load_phone.php";
+      
+        // Открыть соединение с сервером
+        xmlHttp.open("GET", url, true);
+      
+        // Установить функцию для сервера, которая выполнится после его ответа
+        xmlHttp.onreadystatechange = updatePage;
+      
+        // SПередать запрос
+        xmlHttp.send(null);
+      });      
+</script>-->
+
+<script>
+	$(document).ready(function(){
+	    $("#myController").jFlow({
+			controller: ".control", // must be class, use . sign
+			slideWrapper : "#jFlowSlider", // must be id, use # sign
+			slides: "#slider",  // the div where all your sliding divs are nested in
+			selectedWrapper: "jFlowSelected",  // just pure text, no sign
+			width: "984px",  // this is the width for the content-slider
+			height: "300px",  // this is the height for the content-slider
+			duration: 400,  // time in miliseconds to transition one slide
+			prev: ".slidprev", // must be class, use . sign
+			next: ".slidnext", // must be class, use . sign
+			auto: true
+    });
+	$('p').each(function() {
+    var $this = $(this);
+    if($this.html().replace(/\s|&nbsp;/g, '').length == 0)
+        $this.remove();
+	$("select.select").selectBox();
+	
+	
+});
+	
+  });
+  </script>
+  <script>
+	$(function() {
+	  $('#list_product').carouFredSel({
+		prev: '#prev_c1',
+		next: '#next_c1',
+		auto: false
+	  });
+     $('#list_product2').carouFredSel({
+		prev: '#prev_c2',
+		next: '#next_c2',
+		auto: false
+	  });
+	  $('#thumblist').carouFredSel({
+		prev: '#img_prev',
+		next: '#img_next',
+		scroll: 1,
+		auto: false,
+		circular: false,
+	  });
+	  /*
+	  $('#list_banners').carouFredSel({
+		prev: '#ban_prev',
+		next: '#ban_next',
+		scroll: 1,
+		auto: false
+	  });*/
+	  $(window).resize();
+	});
+  </script>
+  <script>
+       $(document).ready(function(){
+	      $("button").click(function(){
+		     $(this).addClass('click')
+	      });
+       })
+  </script>
+  
+  <script>
+	$(document).ready(function() {
+		$('#wrapper_tab a.tab_link').click(function() {
+			if ($(this).attr('class') != $('#wrapper_tab').attr('class') ) {
+				$('#wrapper_tab').attr('class',$(this).attr('class'));
+			}
+			return false;
+		});
+		
+		$( "ul#thumblist" ).children().click(function(e) {
+		e.preventDefault();
+		surl = $( this ).find('a').attr( 'smallimage');
+		burl = $( this ).find('a').attr( 'largeimage');		
+		$( "a#productBigImage" ).attr( 'href', burl );
+		$( "a#productBigImage img" ).attr( 'src', surl );
+		return false;
+	    });
+		
+		
+	});
+  </script>
+  
+  <link rel='stylesheet' id='highslide-css'  href='{$wa_active_theme_url}highslide/highslide.css?ver=3.5.1' type='text/css' media='all' />
+  <script type='text/javascript' src='{$wa_active_theme_url}highslide/highslide-with-gallery.js?ver=3.5.1'></script>
+  <script type="text/javascript">
+//<![CDATA[
+
+hs.showCredits = 0;
+hs.padToMinWidth = true;
+
+
+//hs.align = 'center';
+if (hs.registerOverlay) {
+	// The white controlbar overlay
+	hs.registerOverlay({
+		thumbnailId: 'thumb3',
+    	overlayId: 'controlbar',
+    	position: 'top right',
+    	hideOnMouseOut: true
+	});
+	// The simple semitransparent close button overlay
+	hs.registerOverlay({
+		thumbnailId: 'thumb2',
+		html: '<div class="closebutton"	onclick="return hs.close(this)" title="Close"></div>',
+		position: 'top right',
+		fade: 2 // fading the semi-transparent overlay looks bad in IE
+	});
+}
+
+// ONLY FOR THIS EXAMPLE PAGE!
+// Initialize wrapper for rounded-white. The default wrapper (drop-shadow)
+// is initialized internally.
+if (hs.addEventListener && hs.Outline) hs.addEventListener(window, 'load', function () {
+	new hs.Outline('rounded-white');
+	new hs.Outline('glossy-dark');
+});
+
+// The gallery example on the front page
+var galleryOptions = {
+	slideshowGroup: 'gallery',
+	wrapperClassName: 'dark',
+	//outlineType: 'glossy-dark',
+	dimmingOpacity: 0.8,
+	align: 'center',
+	transitions: ['expand', 'crossfade'],
+	fadeInOut: true,
+	wrapperClassName: 'borderless floating-caption',
+	marginLeft: 100,
+	marginBottom: 150,
+	numberPosition: 'caption'
+};
+
+if (hs.addSlideshow) hs.addSlideshow({
+    slideshowGroup: 'gallery',
+    interval: 5000,
+    repeat: false,
+    useControls: true,
+    overlayOptions: {
+    	className: 'text-controls',
+		position: 'bottom center',
+		relativeTo: 'viewport',
+		offsetY: -60
+	},
+	thumbstrip: {
+		position: 'bottom center',
+		mode: 'horizontal',
+		relativeTo: 'viewport'
+	}
+
+});
+hs.Expander.prototype.onInit = function() {
+	hs.marginBottom = (this.slideshowGroup == 'gallery') ? 150 : 15;
+}
+hs.graphicsDir = '{$wa_active_theme_url}highslide/graphics/';
+//]]>
+</script>
+  
+  
+
+    {if !empty($nofollow)}
+        <!-- "nofollow" for pages not to be indexed, e.g. customer account -->
+        <meta name="robots" content="noindex,nofollow" />
+    {/if}
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=cyrillic-ext' rel='stylesheet' type='text/css'>
+    <!-- plugin hook: 'frontend_head' -->
+    {* @event frontend_head.%plugin_id% *}
+    {foreach $frontend_head as $_}{$_}{/foreach}

@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/avantmarket.com.ua/webstat"
+AuthUserFile /var/www/avantmarket/data/etc/3820420.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>
